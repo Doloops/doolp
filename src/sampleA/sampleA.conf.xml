@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<DoolpAgent myAgentId="0" name="sampleA" glog="false" logStats="true">
+<DoolpObjectsLib path="./libsampleA.so"/>
+<Connection name="toHost" path="doolpxml://127.0.0.1:13816"/>
+</DoolpAgent>

@@ -1,0 +1,11 @@
+../include/doolp/doolp-doolpforge.h 
+../include/doolp/doolp-doolpobjectindexer.h 
+../include/doolp/doolp-doolpobjectindexerbyrule.h 
+../include/doolp/doolp-doolpexceptions.h 
+../include/doolp/doolp-doolpnaming.h 
+../include/doolp/doolp-doolpnamingcache.h 
+../include/doolp/doolp-doolpnamingfile.h 
+../include/doolp/doolp-doolppersistance.h 
+../include/doolp/doolp-doolppersistance-ftree.h
+../include/doolp/doolp-doolppubsub-generic.h
+../include/doolp/doolp-doolppubsub-broker.h

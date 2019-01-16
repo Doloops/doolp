@@ -1,0 +1,10 @@
+include ../DoolpConfig
+MOD=doolpCC
+MODULENEEDS =
+MODULESUBS = DML ctags generateDML generateCPP 
+MODULECOMPILEFLAGS = -I../include -I./include
+# MODULELINKFLAGS += -lDML -lglog
+MODULEUSESLIBS = DML glog
+MODULERUNPARAMS = car.doolp.dml gen/car.__doolp.cpp
+# MODULEINSTALLDIR = ../bin # /usr/bin
+DEFAULTACTION = install # run

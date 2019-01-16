@@ -1,0 +1,38 @@
+Amélioration des performances de DMLXParser::parse()
+
+Idée : Ne parser pratiquement que ce que l'on a dans le cache de lecture,
+et surtout être capable d'arrêter puis reprendre un parse() en plein milieu 
+de balise.
+
+Sémantique de bool parse()
+Retour true : au moins un event a été parsé
+Retour false : aucun event n'a été parsé, mais la connexion est active
+DMLXParserExecption : exception de lecture de la connexion, ou bug.
+
+Fonctionnement de parse()
+Tous les états possibles sont définis
+
+typedef enum parseState
+{
+  parseStateMarkupOutside,    // Outside any markup
+  parseStateMarkupText,       // Text between markup
+  parseStateMarkupTextSymbol, // &entity; in text
+  parseStateMarkupEnter,      // At the "<" beginning of markup
+  parseStateMarkupName,       // Name of the markup
+  parseStateMarkupInside,     // Inside of the markup, after the name
+  parseStateMarkupAttrName,   // Attribute name 
+  parseStateMarkupAttrBeforeEqual, // After the attribute name, before equal
+  parseStateMarkupAttrEqual,  // "=" sign
+  parseStateMarkupAttrValue,  // After the '"', reading value till next '"'
+  parseStateMarkupAttrValueSymbol, // &entity in value
+  parseStateMarkupEnd,        // At the '/' in <markup/>
+  parseStateMarkupEndName,    // At the the / in </markup>
+}
+
+Semantique nextChar() et curChar()
+* nextChar() ne fait que décaler la valeur de bufferIdx
+* curChar() effectue les contrôles nécessaires, mais ne fait 
+  de fillBuffer() que si la fenêtre de lecture était pleine (bufferSz == bufferMax)
+
+Nota : impose d'avoir les valeurs d'attributs de balise entourés de "" (syntaxe XML)
+

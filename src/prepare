@@ -1,0 +1,9 @@
+#!/bin/bash
+DIRS="libglog glogmachine libDoolp libDML doolpCC doolpAgent sampleA sampleB encodeDMLXBin decodeDMLXBin generateDMLXDocument glogshowbin modelman libModelman dmlxTransform"
+for d in $DIRS ; do 
+    echo ln Makefile for dir $d
+    rm -f $d/Makefile
+    #    echo "ln -s $(pwd)/Makefile.template $d/Makefile"
+    ln -s $(pwd)/Makefile.template $d/Makefile 
+    #    cp Makefile.template $d/Makefile
+done

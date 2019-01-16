@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<DoolpAgent name="Doolp-PersistanceFTree" glog="false" myAgentId="1" logStats="true">
+<TCPServer type="TCP::XML" name="persistanceServerXML" bindAddress="127.0.0.1" port="13816" logfile="connectionLog-persist.xml"/>
+<ObjectIndexerService type="ByRule" priority="0"/>
+<Persistance type="FTree" root="persistance"/>
+<Naming type="File" file="persistance/names" priority="0"/>
+<PubSub/>
+</DoolpAgent>

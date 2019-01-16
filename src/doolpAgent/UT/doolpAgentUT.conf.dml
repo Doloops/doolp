@@ -1,0 +1,11 @@
+
+DoolpAgentConfig myConfig
+{
+	DoolpAgentId myAgentId = 1 ;
+	TCPServer openServer
+	{
+		bindAddress = 127.0.0.1 ;
+		port = 13815 ;
+	}
+	bool logStats = true ;
+}

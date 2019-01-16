@@ -1,0 +1,177 @@
+******************
+*  doolp-1 TODO  *
+******************
+
+	- Step3
+* Slot Mechanism -done
+	- chooseAgentId -TODO
+	-
+
+* General service API
+	- Basis done
+	- Implement service::start() and stop()
+
+* Bind context to its father
+	- commit
+	- cancel
+
+* NamedContext, NamedObject
+	- Register/Retrieve a DoolpFullContextId or a DoolpObjectId from a string -done
+	- Carefull : NamedObjects are context-dependant
+
+	- Step2 -ongoing
+
+* doolpAgent :
+	- DML configuration file : -done
+		- Secure conf parsing
+		- Define lexical and syntaxical approach
+	- Distant terminal / remote access commands :
+		- Define distant calls to pass commands to agent (reload lib, provide stats)
+
+* libDoolp
+- DoolpAgent :
+	- Simple agentId indexing : must index this as a DoolpObjectId !
+	- Way things shall work :
+		- agent numbering if agentId==0 and if local capabilities indexing
+		- build up the struct agentId
+	- Exchange DoolpAgent capabilities
+- DoolpStream : - Must simplify this shit !
+	- General rule 1 : Provider and consumer can be both caller or runner, at the same time :
+		- Caller A calls function f to agent B with Doolpstream s
+		- Elements pushed by A on s will be popped by B
+		- Elements pushed by B on s will be popped by A
+		- Elements pushed by an agent can not be popped by the same agent.
+		-> This forces the question/answer mechanism with streams to use same object types at question & answer.
+	- General rule 2 : When caller calls sync
+		- No streaming end issues : streams are considerated finished when function is called (for both ways)
+	- General rule 3a : When caller calls async
+		- When caller calls async, it has capability push elements on the stream after the call.
+		- Call will be finished (i.e. the job running will see it as finished) when all pending streams are finished.
+		- Push/pop is a bidirectionnal ways of communication
+		- When caller calls async, it can also pop elements from the stream after the call
+		- It will recieve a separate notification of stream ending for each stream (popped all recieved elements)
+		- Exception sent (optionnal) when job finished with still pending streams.
+	- General rule 3b : distributed streams (streams in multiple calls)
+		- Capability to imply the same stream in multiple async calls
+		- When an element is pushed on the stream, it is sent through all the calls linked to the stream.
+		- When popping, it will pop elements by all calls (in the chronological order they have been recieved).
+		- This is not available for sync calls ?
+	- General rule 4 : local cache / local content of the stream
+		- Specific rules to set up the way stream elements are freed when sent
+		- Sync calls does not empty streams
+		- Async calls does not store elements
+		- Elements are stored only when stream is not linked to any call (not applicable for the job)
+	- Implement a general multiway sequential object to handle :
+		- Streams :
+		- List :
+		- Vector :
+	- Implement multiple ways to send/recieve part of the stream :
+		- Sequential full send of the stream
+		- On-demand retrieve of one/several elements of the stream.
+	- Proposition :
+		- Implement a very generic object that is able to deal about anything non-scalar.
+		- For example, if a function "foo ( int bar )" is provided, this should make really easy 
+			to provide a "foo ( list<int bar> )" extension.
+
+- DoolpJob :
+	- Job queueing
+		- Define job priorities
+		- Notify caller for his job being enqueued
+	- Job context, father contexts
+		- Define context inheritance
+		- Define context credentials according to distant agent credentials and user.
+	- Scheduling
+		- use of doolpThreads as an option
+		- integration with Job queues.
+	- stopping & sending DoolpExceptions
+	- Migrating
+		-
+	- Replaying
+		-
+	- DoolpException handling
+	- Fix performance lack in forceRunInSameJob
+		- When distant call is async, client sends all async calls before starting answering subcalls.
+	- Sending back the modified object -> see DoolpRPC reply sheme
+
+- DoolpCall :
+	- Debug/Fix Asynchronous calls
+	- Timeout management.
+		- add in a timeout thread with timeout values
+		- each given time, the timeout thread checks for timedout calls and sends it back
+		- Implies :
+		- Implement a DoolpException DoolpECallTimeout (and implement DoolpException frame ?)
+		- Take care of mutexes, ..., especially for waitSpecificCall
+	- Asynchronous Calls -done
+		- Mechanism :
+		- define a DoolpCall * asyncCall;
+		- context has a DoolpCall ** _asyncCall;
+		- set in context : setAsyncCall ( &asyncCall );
+		- in context : isAsyncCall = true;
+		- _asyncCall = &asynCall;
+		- to be pushed in a context-specific list ? -> no.
+	- Recieving the modified object -> see DoolpRPC reply scheme
+
+- DoolpContext :
+	- Explicit context creation for new jobs, when run in same thread -done
+		- This allows creation of calls and jobs in the same thread, only when calls are not async.
+		- At job creation : use DoolpForge::pushContext ();
+		- At job deletion : use DoolpForge::popContext ();
+	- Explicit and clever approach for context creation, sub-context creation and context termination :
+		- pushContext(), popContext(), with a link to father context.
+		- commitContext(), cancelContext(), to handle objects retrieved and created in this context.
+
+- DoolpConnection :
+	- Collection handling -ok
+	- Connection initiation protocol (agent numbering, ...) -ongoing
+	- DoolpConnection::waitSpecificCall -done
+		- possibility to wait for a specific call into the caller thread.
+		- to be called by the DoolpForge according to DoolpConnection capabilities
+		- not valid for asynchronous calls.
+		- Implies (for DoolpConnectionTCP) :
+		- Disabling the default handler thread using the lockRead mechanism...
+		- waitCall function returns false if could not wait this Call (not implemented, ...)
+		- if waiting and timeout, throws an exception.
+	- Clean interface for DoolpConnection handling based on the actual doolpconnection-tcp-handler.cpp
+
+- DoolpForge :
+	- avoid callMutex -done
+	- Object requesting -ok
+	- Object sending ?????
+	- (agentId,contextId,stepping,objectId)->(DoolpObject *) Table -almost
+
+- DoolpRPC : DEPRECATED
+	- Precise flags (implemented locally, accessible/how, ..)
+		- Must define a clean typedef flag.
+		- build up functions/macros to get flags : isImplementedLocally, isStdRPC, ...
+		- call policy
+	- Stronger architecture
+	- Reply Scheme
+		- first send (or recieve) reply flag : OK or Exception
+		- if OK, process normally
+		- if Exception, send (or recieve) Exception
+
+* DoolpPreproc
+- Much Cleanups, global redesign -ongoing
+- Use function templates with separable arguments (as an XSL) -ongoing
+- Avoid use of <doolp-preproc-macros.h> -done
+- Implement object sending at end of job, and side-effect parameters sending.
+
+* sampleA
+
+* sampleB
+
+* Test suite...
+- Design a general test suite...
+
+
+	- Step1
+
+* libDoolp
+- Little Redesign
+- Introduce DoolpRPC, DoolpCall, DoolpJob :
+	DoolpRPC is the RPC Model, contains callbacks, useability flags, ...
+	DoolpCall refers to a distant call of a function
+	DoolpJob is a locally running call for a remote host
+
+
+	

@@ -1,0 +1,11 @@
+	CC = g++ -pipe
+	CFLAGS = -Wall -O3 -pg -g -DLOG # -D__GLOG_USELOCKS #-pg -g
+	LANG = #-x c++
+	PLATFORM=LINUX
+	MODULELINKFLAGS = -L../bin
+	MODULEINSTALLDIR = /usr/bin
+	MODULEINSTALLDIR_LIB = /lib
+	DOOLPPREPROC=/usr/bin/doolpCC
+	SUDO = sudo
+	# CompileStaticLibraries=yes
+	# PLATFORM=CYGWIN

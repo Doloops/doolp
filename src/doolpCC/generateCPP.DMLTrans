@@ -1,0 +1,250 @@
+# doolpCC DMLTrans transformer
+# Converts generated DML files into target CPP files.
+
+@@section main
+/* doolpCC-generated Doolp file using DMLTransform facilities */
+
+ #include <doolp.h>
+
+@forSections(@name==DoolpObject) @do:generateObject
+
+@if (@(generateDoolpObjectsInfo)==true)
+/*
+------------- DoolpInfo ---------------
+*/
+DoolpObjectInfo * __DoolpObjectTable[] = 
+{
+@forSections(@name==DoolpObject&&@(name)!=DoolpForge) 	&DoolpObject__@name,
+	(DoolpObjectInfo*)NULL
+};
+DoolpObjectsInfo __DoolpObjectsInfo = 
+{
+	"@name",
+	__DoolpObjectTable
+};
+extern "C" {
+	DoolpObjectsInfo * getDoolpObjectsInfo ()
+		{ return &__DoolpObjectsInfo; }
+} // extern "C"
+@endif
+/* End of File */
+
+@@endSection
+
+
+@@section generateObject
+# Per Object
+@if (@(name)!=DoolpForge)
+@forSections(@name==Include) #include <@(header)>
+DoolpObject * __@(name)__constructor ( DoolpObjectId objId )
+{
+	DoolpObject * obj = new @(name) ( objId );
+	__DOOLP_Log ( "New Object @(name) : %p\n", obj );
+	return obj;
+}
+DoolpNameId @(name)::getDoolpNameId ( )
+	{ return @(nameId); }
+
+/* paramsOffsetTable functions */
+int *@(name)::paramOffsetTable = NULL;
+void @(name)::__checkParamOffsetTable ()
+{
+	if ( paramOffsetTable ) return;
+	paramOffsetTable = (int [])
+	{
+@forSections(@name==Parameter) 		(int)&@(name) - (int) this, @(index),
+		0,0
+	};
+}
+bool @(name)::serialize ( DoolpConnection * conn )
+{
+	conn->WriteObjectHead ( this );
+@forSections(@name==Parameter) 	conn->setNextBlockIndex ( @(index) ); conn->Write ( @(name) );
+	conn->endSubSection ();
+	return true;
+}
+
+bool @(name)::serialize ( DoolpConnection * conn, const int paramId )
+{
+	switch ( paramId )
+	{
+@forSections(@name==Parameter) 	case @(index): conn->setNextBlockIndex ( @(index) ); conn->Write ( @(name) ); break;
+	default: Bug ( "Index not handled : %p\n", paramId);
+	}
+	return true;
+}
+bool @(name)::unserialize ( DoolpConnection * conn )
+{
+	unsigned int blockIndex;
+	while ( ( blockIndex = conn->getNextBlockIndex () ) )
+	switch ( blockIndex )
+	{
+@forSections(@name==Parameter) 	case @(index): conn->Read ( &@(name) ); break;
+	default: Bug ( "Index not handled : %p\n", blockIndex );
+	}
+	return true;
+}
+@else
+ /* I am doolpForge */
+@endif
+@forSections(@name==Function) @do:generateFunction
+
+DoolpRPC *__@(name)__rpcTable [] =
+{
+@forSections(@name==Function) 	&@(functionRoot),
+	NULL
+};
+DoolpObjectInfo DoolpObject__@name =
+{
+	"@(name)", // name
+	@(nameId), // nameId
+@if (@name==DoolpForge)
+	NULL, // DoolpForge does not nead a constructor
+@else
+	__@name__constructor, // constructor
+@endif
+	__@name__rpcTable, // rpcTable
+	// -1 rpcNb not calculated...
+};
+@if (@name==DoolpForge)
+extern "C"
+{
+DoolpObjectInfo * getDoolpForgeStdRPC ( )
+	{ return &DoolpObject__@name; }
+}
+@endif
+@@endSection
+
+
+@@section generateFunction
+
+/* Function : @(returnType) @father.name::@(name) ( @(signature) );*/
+
+@if (@(isImplementedLocally)==true)
+/* Function is implemented locally */
+
+typedef struct @(functionRoot)_prepareStruct
+{
+#	unsigned int key;
+@forSections(@name==Parameter) 	@(type) @(name);
+@forSections(@name==Stream) 	@(fullType) @(name);
+	unsigned int res;
+};
+int @(functionRoot)_prepare ( DoolpJob *job, DoolpConnection * conn, void ** buffer )
+{
+	*buffer = malloc ( sizeof ( @(functionRoot)_prepareStruct ) ); 
+ #define __bf ((@(functionRoot)_prepareStruct*) *buffer)
+#	conn->Read(/* unsigned int */ &(__bf->key));
+@forSections(@type==Parameter) 	conn->Read ( &(__bf->@name) );	
+
+@forSections(@type==Stream) 	__bf->@name = new DoolpStream<@(type)>;
+@forSections(@type==Stream) 	__bf->@name->bind (conn, job, @(index), DoolpStreamBindOption_RdWr );
+	conn->readSubSectionEnd ();
+ #undef __bf
+	return sizeof ( @(functionRoot)_prepareStruct );
+}
+
+bool @(functionRoot)_run ( DoolpJob * job, DoolpConnection * conn,
+	DoolpObject * object, void * buffer,  int size )
+{
+	__DOOLP_Log ( "Job %p, object %p, conn %p\n",
+		job, conn, object );
+ #define __bf ((@(functionRoot)_prepareStruct*) buffer)
+	@(returnType)  result = ( (@father.name *)object)->@(localName) (
+#		__bf->freq, __bf->name 
+# the Operator @.[chain] is changed to [chain] when inside the sections, and to nothing for the last element.
+@forSections(@type==Stream||@type==Parameter) 		__bf->@name @., // Type @type : @(type)
+		);
+@forSections(@type==Stream) 	__bf->@name->unbind ( job );
+ #undef __bf
+	conn->startReply ( job );
+	conn->startParamSubSection ( ); 
+	conn->Write ( result );
+	conn->endSubSection ( ); 
+@if (@father.name!=DoolpForge)
+	object->forge->serializeObjectsFromStepping ( conn, 0 );
+@endif
+	conn->endMessage ();
+	free (buffer);
+	return true;
+}
+@else
+
+/* Function is not implemented locally */
+
+@endif
+
+
+@if (@(mustGenerateStrap)==true)
+
+bool @(functionRoot)_handleReply ( DoolpCall * call,
+	DoolpConnection * conn )
+{
+	@(returnType)  * result = (@(returnType) *) malloc ( sizeof (@(returnType)) );
+	conn->Read ( result ); 
+	conn->readSubSectionEnd (); 
+	call->result = (void*) result; 
+	call->resultSize = sizeof ( @(returnType) ); // Should change this...
+	return true;
+}
+
+ @(returnType) @(functionRoot)__getResult ( DoolpCall * call )
+{
+	@(returnType) res = *((@(returnType) *) call->result);
+	free ( call->result);
+	call->result = NULL;
+	return res;
+}
+
+
+# Strap.
+ @(returnType) @father.name::@name ( @(signature) )
+{
+        DoolpConnection * conn;
+        DoolpCall * call;
+@if (@father.name==DoolpForge)
+	DoolpForge * forge = this; // Ugly workaround..
+@endif
+        forge->newCall ( @(functionId), objectId,
+                  &call, &conn );
+        conn->startParamSubSection ();
+@forSections(@type==Parameter) 	conn->Write( @name );
+        conn->endSubSection ();
+@forSections(@type==Stream) 	@name->bind ( conn, call, @(index), DoolpStreamBindOption_RdWr );
+        conn->endMessage ();
+        forge->addCall ( call );
+        if ( call->async ) return (bool ) NULL;
+        forge->waitCall ( call );
+@forSections(@type==Stream) 	@name->unbind ( call );
+        @(returnType)  res = @(functionRoot)__getResult (call);
+        forge->removeCall ( call );
+        return res;
+}
+@endif
+
+DoolpRPC @(functionRoot) =
+{
+	@(functionId), // rpcId
+	"@(name)(@(signature))", // rpcName
+@if (@father.name==DoolpForge)
+	true, // isStdRPC is true, 'cause I am DoolpForge.
+@else
+	false, // isStdRPC is false.
+@endif
+@if (@(isImplementedLocally)==true)
+	@(functionRoot)_prepare, // prepare
+	@(functionRoot)_run, // run
+@else
+	NULL, NULL, // No local _prepare nor _run.
+@endif
+@if (@(mustGenerateStrap)==true)
+	@(functionRoot)_handleReply, // handleReply
+@else
+	NULL, // No local handleReply.
+@endif
+};
+
+@@endSection
+
+
+

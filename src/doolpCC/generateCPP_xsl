@@ -1,0 +1,2 @@
+#!/bin/bash
+generateDMLXDocument generateCPP.xsl getDMLXDocument_generateCPP > generateCPP_xsl.cpp

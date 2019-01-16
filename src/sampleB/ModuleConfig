@@ -1,0 +1,9 @@
+include ../DoolpConfig
+MOD=sampleB
+MODULENEEDS = # ../libDoolp
+MODULESUBS =
+DOOLPPREPROC_HEADERS = ../sampleA/car.h
+MODULECOMPILEFLAGS = -I../include/ -I./ -I../sampleA/
+MODULEUSESLIBS = Doolp DML glog # -L../libDoolp -lDoolp # -shared
+UseDoolpPreproc = yes
+DEFAULTACTION = link

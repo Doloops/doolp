@@ -1,0 +1,9 @@
+#!/bin/bash
+nb=$1
+if [ "Z$nb" == "Z" ] ; then nb=10 ; fi
+i=0
+while [ $i -lt $nb ] ; do
+   echo test $i
+    ./sampleB
+    let "i++"
+done

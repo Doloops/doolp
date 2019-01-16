@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<DoolpAgentConfig name="myConfig">
+<DoolpAgent config="UT/doolpAgentUT-gateway.conf.xml"/>
+<DoolpAgent config="UT/doolpAgentUT-persistance.conf.xml"/>
+</DoolpAgentConfig>

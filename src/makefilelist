@@ -1,0 +1,5 @@
+#!/bin/bash
+find -name "*.cpp" > filelist
+find -name "*.h" >> filelist
+find -name "*.xsl" >> filelist
+cat filelist | xargs wc -l | sort -n

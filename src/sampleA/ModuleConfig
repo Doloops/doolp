@@ -1,0 +1,11 @@
+include ../DoolpConfig
+MOD=sampleA
+MODULENEEDS = # ../libDoolp
+MODULESUBS =
+MODULECOMPILEFLAGS = -I../include/ -I./
+MODULELIBNAME=lib$(MOD).so
+MODULEUSESLIBS = Doolp glog DML
+#MODULELINKFLAGS = -L../libDoolp -lDoolp # -shared
+MODULERUNEXTERN = doolpAgent sampleA.conf.xml
+UseDoolpPreproc = yes
+DEFAULTACTION = lib runExtern

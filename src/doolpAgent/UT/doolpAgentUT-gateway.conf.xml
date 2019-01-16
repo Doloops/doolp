@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<DoolpAgent name="Doolp-Gateway" glog="false" myAgentId="2" logStats="true">
+<TCPServer name="mainServer" bindAddress="127.0.0.1" port=13815/>
+<XMLTCPServer name="gwServerXML" bindAddress="127.0.0.1" port=13816 logfile="connectionLog-gw.xml"/>
+<XMLTCPConnection name="toHost" host="127.0.0.1" port="13817" logfile="connectionLog-topersist.xml" tellImplementedRPCs="false" probeServices="true"/>
+</DoolpAgent>

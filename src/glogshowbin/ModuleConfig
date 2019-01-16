@@ -1,0 +1,9 @@
+include ../DoolpConfig
+MOD=glogshowbin
+MODULENEEDS =
+MODULESUBS = 
+MODULECOMPILEFLAGS = -I../include
+MODULEUSESLIBS = glog
+MODULERUNPARAMS = 
+MODULEINSTALLDIR = /usr/bin
+DEFAULTACTION = install

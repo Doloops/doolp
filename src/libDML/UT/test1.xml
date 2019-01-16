@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DoolpObject name="myObject">
+Corps1
+  <Function name="Alfred">
+Corps2
+    <Param name="Brigitte" type="char *"/>
+Corps3
+  </Function>
+Corps4
+  <Function Name="Brigitte"/>
+Corps5
+</DoolpObject>

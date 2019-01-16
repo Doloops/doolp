@@ -1,0 +1,9 @@
+include ../DoolpConfig
+MOD=generateDMLXDocument
+MODULENEEDS =
+MODULESUBS = 
+MODULECOMPILEFLAGS = -I../include
+MODULEUSESLIBS = DML glog
+MODULERUNPARAMS = 
+MODULEINSTALLDIR = /usr/bin
+DEFAULTACTION = install

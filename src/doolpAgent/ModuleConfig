@@ -1,0 +1,11 @@
+include ../DoolpConfig
+MOD=doolpAgent
+MODULENEEDS = # ../libDoolp
+MODULESUBS =
+MODULECOMPILEFLAGS = -I../include/
+# MODULELINKFLAGS = -lDoolp -lDML -lglog # -shared
+MODULELINKFLAGS =
+MODULEUSESLIBS = Doolp DML glog
+MODULEINSTALLDIR = /usr/bin
+MODULERUNPARAMS = --conf UT/doolpAgentUT.conf.xml
+DEFAULTACTION = install run

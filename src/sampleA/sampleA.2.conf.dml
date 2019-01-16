@@ -1,0 +1,19 @@
+
+DoolpAgentConfig myConfig
+{
+	DoolpAgentId myAgentId = 2 ;
+	bool logStats = true ;
+	TCPConnection tryConnect
+	{
+		host = 81.57.19.187 ;
+		port = 13815 ;
+		bool tellImplementedRPCs = true ;
+	}		
+	DoolpObjectsLib addLib
+	{
+		lib = "./libsampleA.so" ;
+	}
+	
+
+
+}

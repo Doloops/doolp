@@ -1,0 +1,18 @@
+include ../DoolpConfig
+MOD=Doolp
+MODULENEEDS =
+MODULESUBS = doolpforge doolpforgeservices doolpobject doolpconnection-xml
+# doolpconnection-tcp is deprecated (except for DoolpConnectionTCPServer)
+MODULECOMPILEFLAGS = -I../include/ # -I/usr/lib/sigc++-2.0/include -I/usr/include/sigc++-2.0
+MODULELIBNAME=lib$(MOD).so
+MODULELINKFLAGS = -lglog -lDML # -lsigc-2.0 # -ldmalloccxx # -shared
+DOOLPPREPROC_HEADERS=$(shell cat ./DoolpPreproc_Headers)
+DOOLPPREPROC_NOCPPS=yes
+# DOOLPPREPROC_CPPS=
+define DOOLPPREPROC_CPPS
+endef
+DOOLPPREPROC_FLAGS=--stdRPC --DoolpObjectsInfoName getDoolpForgeObjectsInfo --DoolpObjectsInfoNotExtern 
+UseDoolpPreproc=yes
+DOOLPPREPROC_CPP=doolpforge-stdrpc.__doolp.cpp
+MODULEINSTALLDIR=/lib
+DEFAULTACTION = lib libinstall

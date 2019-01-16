@@ -1,0 +1,538 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+__DOOLP_DOOLPFORGE_H	../include/doolp/doolp-doolpforge.h	2;"	kind:macro	line:2	language:C++
+Doolp	../include/doolp/doolp-doolpforge.h	/^namespace Doolp$/;"	kind:namespace	line:20	language:C++
+ForgeOptions	../include/doolp/doolp-doolpforge.h	/^  typedef struct ForgeOptions$/;"	kind:struct	line:22	language:C++	namespace:Doolp
+Doolp::ForgeOptions	../include/doolp/doolp-doolpforge.h	/^  typedef struct ForgeOptions$/;"	kind:struct	line:22	language:C++	namespace:Doolp
+usePushedContexts	../include/doolp/doolp-doolpforge.h	/^    bool usePushedContexts; \/\/ unused ?$/;"	kind:member	line:24	language:C++	struct:Doolp::ForgeOptions	access:public
+Doolp::ForgeOptions::usePushedContexts	../include/doolp/doolp-doolpforge.h	/^    bool usePushedContexts; \/\/ unused ?$/;"	kind:member	line:24	language:C++	struct:Doolp::ForgeOptions	access:public
+useWaitSpecificCall	../include/doolp/doolp-doolpforge.h	/^    bool useWaitSpecificCall;$/;"	kind:member	line:25	language:C++	struct:Doolp::ForgeOptions	access:public
+Doolp::ForgeOptions::useWaitSpecificCall	../include/doolp/doolp-doolpforge.h	/^    bool useWaitSpecificCall;$/;"	kind:member	line:25	language:C++	struct:Doolp::ForgeOptions	access:public
+forceJobsInSameThread	../include/doolp/doolp-doolpforge.h	/^    bool forceJobsInSameThread;$/;"	kind:member	line:26	language:C++	struct:Doolp::ForgeOptions	access:public
+Doolp::ForgeOptions::forceJobsInSameThread	../include/doolp/doolp-doolpforge.h	/^    bool forceJobsInSameThread;$/;"	kind:member	line:26	language:C++	struct:Doolp::ForgeOptions	access:public
+allowDoolpObjectBuffer	../include/doolp/doolp-doolpforge.h	/^    bool allowDoolpObjectBuffer;$/;"	kind:member	line:27	language:C++	struct:Doolp::ForgeOptions	access:public
+Doolp::ForgeOptions::allowDoolpObjectBuffer	../include/doolp/doolp-doolpforge.h	/^    bool allowDoolpObjectBuffer;$/;"	kind:member	line:27	language:C++	struct:Doolp::ForgeOptions	access:public
+jobObjectTTL	../include/doolp/doolp-doolpforge.h	/^    ObjectTTL jobObjectTTL; \/\/ object sent only for a given job$/;"	kind:member	line:28	language:C++	struct:Doolp::ForgeOptions	access:public
+Doolp::ForgeOptions::jobObjectTTL	../include/doolp/doolp-doolpforge.h	/^    ObjectTTL jobObjectTTL; \/\/ object sent only for a given job$/;"	kind:member	line:28	language:C++	struct:Doolp::ForgeOptions	access:public
+Forge	../include/doolp/doolp-doolpforge.h	/^  class Forge : public Object$/;"	kind:class	line:31	language:C++	namespace:Doolp	inherits:Object
+Doolp::Forge	../include/doolp/doolp-doolpforge.h	/^  class Forge : public Object$/;"	kind:class	line:31	language:C++	namespace:Doolp	inherits:Object
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpforge.h	33;"	kind:macro	line:33	language:C++
+DoolpObject_stdFeatures	../include/doolp/doolp-doolpforge.h	/^  DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:34	language:C++	class:Doolp::Forge	access:private	signature:( )
+Doolp::Forge::DoolpObject_stdFeatures	../include/doolp/doolp-doolpforge.h	/^  DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:34	language:C++	class:Doolp::Forge	access:private	signature:( )
+options	../include/doolp/doolp-doolpforge.h	/^  ForgeOptions options;$/;"	kind:member	line:37	language:C++	class:Doolp::Forge	access:public
+Doolp::Forge::options	../include/doolp/doolp-doolpforge.h	/^  ForgeOptions options;$/;"	kind:member	line:37	language:C++	class:Doolp::Forge	access:public
+Forge	../include/doolp/doolp-doolpforge.h	/^  Forge ();$/;"	kind:prototype	line:38	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::Forge	../include/doolp/doolp-doolpforge.h	/^  Forge ();$/;"	kind:prototype	line:38	language:C++	class:Doolp::Forge	access:public	signature:()
+~Forge	../include/doolp/doolp-doolpforge.h	/^  ~Forge ();$/;"	kind:prototype	line:39	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::~Forge	../include/doolp/doolp-doolpforge.h	/^  ~Forge ();$/;"	kind:prototype	line:39	language:C++	class:Doolp::Forge	access:public	signature:()
+getForge	../include/doolp/doolp-doolpforge.h	/^  inline Forge * getForge() { return this; }$/;"	kind:function	line:40	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getForge	../include/doolp/doolp-doolpforge.h	/^  inline Forge * getForge() { return this; }$/;"	kind:function	line:40	language:C++	class:Doolp::Forge	access:public	signature:()
+close	../include/doolp/doolp-doolpforge.h	/^  bool close ();$/;"	kind:prototype	line:41	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::close	../include/doolp/doolp-doolpforge.h	/^  bool close ();$/;"	kind:prototype	line:41	language:C++	class:Doolp::Forge	access:public	signature:()
+myAgent	../include/doolp/doolp-doolpforge.h	/^  Agent myAgent; \/\/ Me as an agent$/;"	kind:member	line:47	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::myAgent	../include/doolp/doolp-doolpforge.h	/^  Agent myAgent; \/\/ Me as an agent$/;"	kind:member	line:47	language:C++	class:Doolp::Forge	access:protected
+agents	../include/doolp/doolp-doolpforge.h	/^  list<Agent*> agents; \/\/ List of known agents$/;"	kind:member	line:48	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::agents	../include/doolp/doolp-doolpforge.h	/^  list<Agent*> agents; \/\/ List of known agents$/;"	kind:member	line:48	language:C++	class:Doolp::Forge	access:protected
+getAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId getAgentId (); $/;"	kind:prototype	line:50	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId getAgentId (); $/;"	kind:prototype	line:50	language:C++	class:Doolp::Forge	access:public	signature:()
+getAgent	../include/doolp/doolp-doolpforge.h	/^  Agent * getAgent ( AgentId agentId );$/;"	kind:prototype	line:51	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+Doolp::Forge::getAgent	../include/doolp/doolp-doolpforge.h	/^  Agent * getAgent ( AgentId agentId );$/;"	kind:prototype	line:51	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+addAgent	../include/doolp/doolp-doolpforge.h	/^  bool addAgent ( Agent * agent );$/;"	kind:prototype	line:52	language:C++	class:Doolp::Forge	access:public	signature:( Agent * agent )
+Doolp::Forge::addAgent	../include/doolp/doolp-doolpforge.h	/^  bool addAgent ( Agent * agent );$/;"	kind:prototype	line:52	language:C++	class:Doolp::Forge	access:public	signature:( Agent * agent )
+setAgentId	../include/doolp/doolp-doolpforge.h	/^  bool setAgentId ( AgentId _agentId );$/;"	kind:prototype	line:53	language:C++	class:Doolp::Forge	access:public	signature:( AgentId _agentId )
+Doolp::Forge::setAgentId	../include/doolp/doolp-doolpforge.h	/^  bool setAgentId ( AgentId _agentId );$/;"	kind:prototype	line:53	language:C++	class:Doolp::Forge	access:public	signature:( AgentId _agentId )
+getMyAgent	../include/doolp/doolp-doolpforge.h	/^  Agent * getMyAgent () { return &myAgent; }$/;"	kind:function	line:54	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getMyAgent	../include/doolp/doolp-doolpforge.h	/^  Agent * getMyAgent () { return &myAgent; }$/;"	kind:function	line:54	language:C++	class:Doolp::Forge	access:public	signature:()
+nextAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId nextAgentId;$/;"	kind:member	line:56	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::nextAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId nextAgentId;$/;"	kind:member	line:56	language:C++	class:Doolp::Forge	access:protected
+getFreeAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId getFreeAgentId () \/\/ Protect this ! Nobody except god can do that !$/;"	kind:function	line:58	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getFreeAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId getFreeAgentId () \/\/ Protect this ! Nobody except god can do that !$/;"	kind:function	line:58	language:C++	class:Doolp::Forge	access:public	signature:()
+defaultDistAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId defaultDistAgentId;$/;"	kind:member	line:61	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::defaultDistAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId defaultDistAgentId;$/;"	kind:member	line:61	language:C++	class:Doolp::Forge	access:protected
+getDefaultDistAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId getDefaultDistAgentId () { return defaultDistAgentId; }$/;"	kind:function	line:63	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getDefaultDistAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId getDefaultDistAgentId () { return defaultDistAgentId; }$/;"	kind:function	line:63	language:C++	class:Doolp::Forge	access:public	signature:()
+setDefaultDistAgentId	../include/doolp/doolp-doolpforge.h	/^  void setDefaultDistAgentId ( AgentId agentId )$/;"	kind:function	line:64	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+Doolp::Forge::setDefaultDistAgentId	../include/doolp/doolp-doolpforge.h	/^  void setDefaultDistAgentId ( AgentId agentId )$/;"	kind:function	line:64	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+removeAgent	../include/doolp/doolp-doolpforge.h	/^  bool removeAgent ( AgentId agentId );$/;"	kind:prototype	line:67	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+Doolp::Forge::removeAgent	../include/doolp/doolp-doolpforge.h	/^  bool removeAgent ( AgentId agentId );$/;"	kind:prototype	line:67	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+scheduler	../include/doolp/doolp-doolpforge.h	/^  ForgeScheduler * scheduler;$/;"	kind:member	line:73	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::scheduler	../include/doolp/doolp-doolpforge.h	/^  ForgeScheduler * scheduler;$/;"	kind:member	line:73	language:C++	class:Doolp::Forge	access:protected
+getScheduler	../include/doolp/doolp-doolpforge.h	/^  inline ForgeScheduler * getScheduler() const { return scheduler; }$/;"	kind:function	line:75	language:C++	class:Doolp::Forge	access:public	signature:() const
+Doolp::Forge::getScheduler	../include/doolp/doolp-doolpforge.h	/^  inline ForgeScheduler * getScheduler() const { return scheduler; }$/;"	kind:function	line:75	language:C++	class:Doolp::Forge	access:public	signature:() const
+contextThreadKey	../include/doolp/doolp-doolpforge.h	/^  pthread_key_t contextThreadKey;$/;"	kind:member	line:80	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::contextThreadKey	../include/doolp/doolp-doolpforge.h	/^  pthread_key_t contextThreadKey;$/;"	kind:member	line:80	language:C++	class:Doolp::Forge	access:protected
+nextContextId	../include/doolp/doolp-doolpforge.h	/^  ContextId nextContextId;$/;"	kind:member	line:81	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::nextContextId	../include/doolp/doolp-doolpforge.h	/^  ContextId nextContextId;$/;"	kind:member	line:81	language:C++	class:Doolp::Forge	access:protected
+newContext	../include/doolp/doolp-doolpforge.h	/^  Context * newContext();$/;"	kind:prototype	line:82	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::newContext	../include/doolp/doolp-doolpforge.h	/^  Context * newContext();$/;"	kind:prototype	line:82	language:C++	class:Doolp::Forge	access:protected	signature:()
+runningThreads	../include/doolp/doolp-doolpforge.h	/^  unsigned int runningThreads;$/;"	kind:member	line:83	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::runningThreads	../include/doolp/doolp-doolpforge.h	/^  unsigned int runningThreads;$/;"	kind:member	line:83	language:C++	class:Doolp::Forge	access:protected
+setCurrentContext	../include/doolp/doolp-doolpforge.h	/^  void setCurrentContext ( Context * context ); \/\/ Must be set public because used in setSpecific$/;"	kind:prototype	line:86	language:C++	class:Doolp::Forge	access:public	signature:( Context * context )
+Doolp::Forge::setCurrentContext	../include/doolp/doolp-doolpforge.h	/^  void setCurrentContext ( Context * context ); \/\/ Must be set public because used in setSpecific$/;"	kind:prototype	line:86	language:C++	class:Doolp::Forge	access:public	signature:( Context * context )
+getNewFullContextId	../include/doolp/doolp-doolpforge.h	/^  FullContextId * getNewFullContextId();$/;"	kind:prototype	line:88	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getNewFullContextId	../include/doolp/doolp-doolpforge.h	/^  FullContextId * getNewFullContextId();$/;"	kind:prototype	line:88	language:C++	class:Doolp::Forge	access:public	signature:()
+setNextContextId	../include/doolp/doolp-doolpforge.h	/^  bool setNextContextId(ContextId id);$/;"	kind:prototype	line:90	language:C++	class:Doolp::Forge	access:public	signature:(ContextId id)
+Doolp::Forge::setNextContextId	../include/doolp/doolp-doolpforge.h	/^  bool setNextContextId(ContextId id);$/;"	kind:prototype	line:90	language:C++	class:Doolp::Forge	access:public	signature:(ContextId id)
+getContext	../include/doolp/doolp-doolpforge.h	/^  Context * getContext (); $/;"	kind:prototype	line:92	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getContext	../include/doolp/doolp-doolpforge.h	/^  Context * getContext (); $/;"	kind:prototype	line:92	language:C++	class:Doolp::Forge	access:public	signature:()
+notifyContextEnd	../include/doolp/doolp-doolpforge.h	/^  bool notifyContextEnd (Context * context);$/;"	kind:prototype	line:93	language:C++	class:Doolp::Forge	access:public	signature:(Context * context)
+Doolp::Forge::notifyContextEnd	../include/doolp/doolp-doolpforge.h	/^  bool notifyContextEnd (Context * context);$/;"	kind:prototype	line:93	language:C++	class:Doolp::Forge	access:public	signature:(Context * context)
+notifyContextEnd	../include/doolp/doolp-doolpforge.h	/^  bool notifyContextEnd (FullContextId * fullContextId);$/;"	kind:prototype	line:94	language:C++	class:Doolp::Forge	access:public	signature:(FullContextId * fullContextId)
+Doolp::Forge::notifyContextEnd	../include/doolp/doolp-doolpforge.h	/^  bool notifyContextEnd (FullContextId * fullContextId);$/;"	kind:prototype	line:94	language:C++	class:Doolp::Forge	access:public	signature:(FullContextId * fullContextId)
+getFullContextId	../include/doolp/doolp-doolpforge.h	/^  FullContextId * getFullContextId ();$/;"	kind:prototype	line:95	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getFullContextId	../include/doolp/doolp-doolpforge.h	/^  FullContextId * getFullContextId ();$/;"	kind:prototype	line:95	language:C++	class:Doolp::Forge	access:public	signature:()
+getStepping	../include/doolp/doolp-doolpforge.h	/^  ContextStepping getStepping () $/;"	kind:function	line:96	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getStepping	../include/doolp/doolp-doolpforge.h	/^  ContextStepping getStepping () $/;"	kind:function	line:96	language:C++	class:Doolp::Forge	access:public	signature:()
+pushContext	../include/doolp/doolp-doolpforge.h	/^  void pushContext ();$/;"	kind:prototype	line:100	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::pushContext	../include/doolp/doolp-doolpforge.h	/^  void pushContext ();$/;"	kind:prototype	line:100	language:C++	class:Doolp::Forge	access:public	signature:()
+popContext	../include/doolp/doolp-doolpforge.h	/^  bool popContext ();$/;"	kind:prototype	line:101	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::popContext	../include/doolp/doolp-doolpforge.h	/^  bool popContext ();$/;"	kind:prototype	line:101	language:C++	class:Doolp::Forge	access:public	signature:()
+setContextFather	../include/doolp/doolp-doolpforge.h	/^  void setContextFather ( FullContextId * father ); \/\/ Sets context inheritance$/;"	kind:prototype	line:104	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * father )
+Doolp::Forge::setContextFather	../include/doolp/doolp-doolpforge.h	/^  void setContextFather ( FullContextId * father ); \/\/ Sets context inheritance$/;"	kind:prototype	line:104	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * father )
+clearContextFather	../include/doolp/doolp-doolpforge.h	/^  void clearContextFather (); \/\/ Clears context inheritance...$/;"	kind:prototype	line:105	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::clearContextFather	../include/doolp/doolp-doolpforge.h	/^  void clearContextFather (); \/\/ Clears context inheritance...$/;"	kind:prototype	line:105	language:C++	class:Doolp::Forge	access:public	signature:()
+getContextFather	../include/doolp/doolp-doolpforge.h	/^  FullContextId * getContextFather ( );$/;"	kind:prototype	line:106	language:C++	class:Doolp::Forge	access:public	signature:( )
+Doolp::Forge::getContextFather	../include/doolp/doolp-doolpforge.h	/^  FullContextId * getContextFather ( );$/;"	kind:prototype	line:106	language:C++	class:Doolp::Forge	access:public	signature:( )
+getAgentIdForThisJob	../include/doolp/doolp-doolpforge.h	/^  AgentId getAgentIdForThisJob ();$/;"	kind:prototype	line:108	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getAgentIdForThisJob	../include/doolp/doolp-doolpforge.h	/^  AgentId getAgentIdForThisJob ();$/;"	kind:prototype	line:108	language:C++	class:Doolp::Forge	access:public	signature:()
+incrementStepping	../include/doolp/doolp-doolpforge.h	/^  void incrementStepping ();$/;"	kind:prototype	line:110	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::incrementStepping	../include/doolp/doolp-doolpforge.h	/^  void incrementStepping ();$/;"	kind:prototype	line:110	language:C++	class:Doolp::Forge	access:public	signature:()
+newThread	../include/doolp/doolp-doolpforge.h	/^  bool newThread ( Context * newContext, $/;"	kind:prototype	line:112	language:C++	class:Doolp::Forge	access:protected	signature:( Context * newContext, pthread_t * pthread, const pthread_attr_t *attr, void *(*start_routine)(void*), void *arg)
+Doolp::Forge::newThread	../include/doolp/doolp-doolpforge.h	/^  bool newThread ( Context * newContext, $/;"	kind:prototype	line:112	language:C++	class:Doolp::Forge	access:protected	signature:( Context * newContext, pthread_t * pthread, const pthread_attr_t *attr, void *(*start_routine)(void*), void *arg)
+newThread	../include/doolp/doolp-doolpforge.h	/^  bool newThread (pthread_t * pthread,$/;"	kind:prototype	line:120	language:C++	class:Doolp::Forge	access:public	signature:(pthread_t * pthread, const pthread_attr_t *attr, void *(*start_routine)(void*), void *arg)
+Doolp::Forge::newThread	../include/doolp/doolp-doolpforge.h	/^  bool newThread (pthread_t * pthread,$/;"	kind:prototype	line:120	language:C++	class:Doolp::Forge	access:public	signature:(pthread_t * pthread, const pthread_attr_t *attr, void *(*start_routine)(void*), void *arg)
+objectStaticInfo	../include/doolp/doolp-doolpforge.h	/^  ObjectStaticInfo * objectStaticInfo;$/;"	kind:member	line:131	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::objectStaticInfo	../include/doolp/doolp-doolpforge.h	/^  ObjectStaticInfo * objectStaticInfo;$/;"	kind:member	line:131	language:C++	class:Doolp::Forge	access:protected
+objectDynamicInfo	../include/doolp/doolp-doolpforge.h	/^  ObjectDynamicInfo * objectDynamicInfo;$/;"	kind:member	line:132	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::objectDynamicInfo	../include/doolp/doolp-doolpforge.h	/^  ObjectDynamicInfo * objectDynamicInfo;$/;"	kind:member	line:132	language:C++	class:Doolp::Forge	access:protected
+getObjectStaticInfo	../include/doolp/doolp-doolpforge.h	/^  inline ObjectStaticInfo * getObjectStaticInfo() { return objectStaticInfo; }$/;"	kind:function	line:134	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getObjectStaticInfo	../include/doolp/doolp-doolpforge.h	/^  inline ObjectStaticInfo * getObjectStaticInfo() { return objectStaticInfo; }$/;"	kind:function	line:134	language:C++	class:Doolp::Forge	access:public	signature:()
+getObjectDynamicInfo	../include/doolp/doolp-doolpforge.h	/^  inline ObjectDynamicInfo * getObjectDynamicInfo() { return objectDynamicInfo; }$/;"	kind:function	line:135	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getObjectDynamicInfo	../include/doolp/doolp-doolpforge.h	/^  inline ObjectDynamicInfo * getObjectDynamicInfo() { return objectDynamicInfo; }$/;"	kind:function	line:135	language:C++	class:Doolp::Forge	access:public	signature:()
+getException	../include/doolp/doolp-doolpforge.h	/^  Exception * getException ( ExceptionId exceptionId );$/;"	kind:prototype	line:136	language:C++	class:Doolp::Forge	access:public	signature:( ExceptionId exceptionId )
+Doolp::Forge::getException	../include/doolp/doolp-doolpforge.h	/^  Exception * getException ( ExceptionId exceptionId );$/;"	kind:prototype	line:136	language:C++	class:Doolp::Forge	access:public	signature:( ExceptionId exceptionId )
+forceCallsTOOwner	../include/doolp/doolp-doolpforge.h	/^  static const bool forceCallsTOOwner = false;$/;"	kind:member	line:140	language:C++	class:Doolp::Forge	access:public
+Doolp::Forge::forceCallsTOOwner	../include/doolp/doolp-doolpforge.h	/^  static const bool forceCallsTOOwner = false;$/;"	kind:member	line:140	language:C++	class:Doolp::Forge	access:public
+getOwnerAgentId	../include/doolp/doolp-doolpforge.h	/^  inline AgentId getOwnerAgentId() { return getAgentId(); }$/;"	kind:function	line:141	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getOwnerAgentId	../include/doolp/doolp-doolpforge.h	/^  inline AgentId getOwnerAgentId() { return getAgentId(); }$/;"	kind:function	line:141	language:C++	class:Doolp::Forge	access:public	signature:()
+objectCache	../include/doolp/doolp-doolpforge.h	/^  ObjectCache * objectCache;$/;"	kind:member	line:145	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::objectCache	../include/doolp/doolp-doolpforge.h	/^  ObjectCache * objectCache;$/;"	kind:member	line:145	language:C++	class:Doolp::Forge	access:protected
+addObject	../include/doolp/doolp-doolpforge.h	/^  bool addObject ( Object * obj );$/;"	kind:prototype	line:147	language:C++	class:Doolp::Forge	access:public	signature:( Object * obj )
+Doolp::Forge::addObject	../include/doolp/doolp-doolpforge.h	/^  bool addObject ( Object * obj );$/;"	kind:prototype	line:147	language:C++	class:Doolp::Forge	access:public	signature:( Object * obj )
+removeObject	../include/doolp/doolp-doolpforge.h	/^  bool removeObject ( Object * obj );$/;"	kind:prototype	line:151	language:C++	class:Doolp::Forge	access:public	signature:( Object * obj )
+Doolp::Forge::removeObject	../include/doolp/doolp-doolpforge.h	/^  bool removeObject ( Object * obj );$/;"	kind:prototype	line:151	language:C++	class:Doolp::Forge	access:public	signature:( Object * obj )
+getObjectCache	../include/doolp/doolp-doolpforge.h	/^  ObjectCache * getObjectCache ( ) { return objectCache; } $/;"	kind:function	line:153	language:C++	class:Doolp::Forge	access:public	signature:( )
+Doolp::Forge::getObjectCache	../include/doolp/doolp-doolpforge.h	/^  ObjectCache * getObjectCache ( ) { return objectCache; } $/;"	kind:function	line:153	language:C++	class:Doolp::Forge	access:public	signature:( )
+getDistObject	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<Object *,FullContextId *,ObjectId> getDistObject;$/;"	kind:member	line:154	language:C++	class:Doolp::Forge	access:public
+Doolp::Forge::getDistObject	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<Object *,FullContextId *,ObjectId> getDistObject;$/;"	kind:member	line:154	language:C++	class:Doolp::Forge	access:public
+getDistObject	../include/doolp/doolp-doolpforge.h	/^  Object * doolpfunclocal(getDistObject) ( FullContextId * fullContextId, $/;"	kind:prototype	line:155	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * fullContextId, ObjectId objId )
+Doolp::Forge::getDistObject	../include/doolp/doolp-doolpforge.h	/^  Object * doolpfunclocal(getDistObject) ( FullContextId * fullContextId, $/;"	kind:prototype	line:155	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * fullContextId, ObjectId objId )
+doolpfunchelper	../include/doolp/doolp-doolpforge.h	/^  AgentId doolpfunchelper(chooseAgentId,getDistObject) ( FullContextId * fullContextId, ObjectId objId )$/;"	kind:function	line:157	language:C++	class:Doolp::Forge	access:public	signature:(chooseAgentId,getDistObject)
+Doolp::Forge::doolpfunchelper	../include/doolp/doolp-doolpforge.h	/^  AgentId doolpfunchelper(chooseAgentId,getDistObject) ( FullContextId * fullContextId, ObjectId objId )$/;"	kind:function	line:157	language:C++	class:Doolp::Forge	access:public	signature:(chooseAgentId,getDistObject)
+getObject	../include/doolp/doolp-doolpforge.h	/^  inline Object * getObject ( FullContextId * fullContextId, $/;"	kind:function	line:160	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * fullContextId, ObjectId objId )
+Doolp::Forge::getObject	../include/doolp/doolp-doolpforge.h	/^  inline Object * getObject ( FullContextId * fullContextId, $/;"	kind:function	line:160	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * fullContextId, ObjectId objId )
+getObject	../include/doolp/doolp-doolpforge.h	/^  inline Object * getObject ( ObjectId objId )$/;"	kind:function	line:163	language:C++	class:Doolp::Forge	access:public	signature:( ObjectId objId )
+Doolp::Forge::getObject	../include/doolp/doolp-doolpforge.h	/^  inline Object * getObject ( ObjectId objId )$/;"	kind:function	line:163	language:C++	class:Doolp::Forge	access:public	signature:( ObjectId objId )
+createEmptyObject	../include/doolp/doolp-doolpforge.h	/^  Object * createEmptyObject ( ObjectNameId nameId,$/;"	kind:prototype	line:166	language:C++	class:Doolp::Forge	access:public	signature:( ObjectNameId nameId, FullContextId * fullContextId, ObjectId objId )
+Doolp::Forge::createEmptyObject	../include/doolp/doolp-doolpforge.h	/^  Object * createEmptyObject ( ObjectNameId nameId,$/;"	kind:prototype	line:166	language:C++	class:Doolp::Forge	access:public	signature:( ObjectNameId nameId, FullContextId * fullContextId, ObjectId objId )
+getAgentIdsForSlotId	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<list<AgentId>*,ObjectNameId,ObjectSlotId> getAgentIdsForSlotId;$/;"	kind:member	line:174	language:C++	class:Doolp::Forge	access:public
+Doolp::Forge::getAgentIdsForSlotId	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<list<AgentId>*,ObjectNameId,ObjectSlotId> getAgentIdsForSlotId;$/;"	kind:member	line:174	language:C++	class:Doolp::Forge	access:public
+getAgentIdsForSlotId	../include/doolp/doolp-doolpforge.h	/^  list<AgentId>* doolpfunclocal(getAgentIdsForSlotId) ( ObjectNameId objectNameId, ObjectSlotId slotId );$/;"	kind:prototype	line:175	language:C++	class:Doolp::Forge	access:public	signature:( ObjectNameId objectNameId, ObjectSlotId slotId )
+Doolp::Forge::getAgentIdsForSlotId	../include/doolp/doolp-doolpforge.h	/^  list<AgentId>* doolpfunclocal(getAgentIdsForSlotId) ( ObjectNameId objectNameId, ObjectSlotId slotId );$/;"	kind:prototype	line:175	language:C++	class:Doolp::Forge	access:public	signature:( ObjectNameId objectNameId, ObjectSlotId slotId )
+tellImplementedSlots	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<bool,list<pair<ObjectNameId,ObjectSlotId> >* > tellImplementedSlots;$/;"	kind:member	line:177	language:C++	class:Doolp::Forge	access:public
+Doolp::Forge::tellImplementedSlots	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<bool,list<pair<ObjectNameId,ObjectSlotId> >* > tellImplementedSlots;$/;"	kind:member	line:177	language:C++	class:Doolp::Forge	access:public
+tellImplementedSlots	../include/doolp/doolp-doolpforge.h	/^  bool doolpfunclocal(tellImplementedSlots) ( list<pair<ObjectNameId,ObjectSlotId> > * );$/;"	kind:prototype	line:178	language:C++	class:Doolp::Forge	access:public	signature:( list<pair<ObjectNameId,ObjectSlotId> > * )
+Doolp::Forge::tellImplementedSlots	../include/doolp/doolp-doolpforge.h	/^  bool doolpfunclocal(tellImplementedSlots) ( list<pair<ObjectNameId,ObjectSlotId> > * );$/;"	kind:prototype	line:178	language:C++	class:Doolp::Forge	access:public	signature:( list<pair<ObjectNameId,ObjectSlotId> > * )
+calls	../include/doolp/doolp-doolpforge.h	/^  list<Call*> calls;$/;"	kind:member	line:184	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::calls	../include/doolp/doolp-doolpforge.h	/^  list<Call*> calls;$/;"	kind:member	line:184	language:C++	class:Doolp::Forge	access:protected
+callMutex	../include/doolp/doolp-doolpforge.h	/^  pthread_mutex_t callMutex;$/;"	kind:member	line:186	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::callMutex	../include/doolp/doolp-doolpforge.h	/^  pthread_mutex_t callMutex;$/;"	kind:member	line:186	language:C++	class:Doolp::Forge	access:protected
+lockCalls	../include/doolp/doolp-doolpforge.h	/^  inline void lockCalls()$/;"	kind:function	line:187	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::lockCalls	../include/doolp/doolp-doolpforge.h	/^  inline void lockCalls()$/;"	kind:function	line:187	language:C++	class:Doolp::Forge	access:protected	signature:()
+unlockCalls	../include/doolp/doolp-doolpforge.h	/^  inline void unlockCalls() { pthread_mutex_unlock ( &callMutex ); }$/;"	kind:function	line:191	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::unlockCalls	../include/doolp/doolp-doolpforge.h	/^  inline void unlockCalls() { pthread_mutex_unlock ( &callMutex ); }$/;"	kind:function	line:191	language:C++	class:Doolp::Forge	access:protected	signature:()
+lockCalls	../include/doolp/doolp-doolpforge.h	/^  inline void lockCalls(); inline void unlockCalls ();$/;"	kind:prototype	line:193	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::lockCalls	../include/doolp/doolp-doolpforge.h	/^  inline void lockCalls(); inline void unlockCalls ();$/;"	kind:prototype	line:193	language:C++	class:Doolp::Forge	access:protected	signature:()
+unlockCalls	../include/doolp/doolp-doolpforge.h	/^  inline void lockCalls(); inline void unlockCalls ();$/;"	kind:prototype	line:193	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::unlockCalls	../include/doolp/doolp-doolpforge.h	/^  inline void lockCalls(); inline void unlockCalls ();$/;"	kind:prototype	line:193	language:C++	class:Doolp::Forge	access:protected	signature:()
+jobMutex	../include/doolp/doolp-doolpforge.h	/^  pthread_mutex_t jobMutex;$/;"	kind:member	line:196	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::jobMutex	../include/doolp/doolp-doolpforge.h	/^  pthread_mutex_t jobMutex;$/;"	kind:member	line:196	language:C++	class:Doolp::Forge	access:protected
+lockJobs	../include/doolp/doolp-doolpforge.h	/^  inline void lockJobs()$/;"	kind:function	line:197	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::lockJobs	../include/doolp/doolp-doolpforge.h	/^  inline void lockJobs()$/;"	kind:function	line:197	language:C++	class:Doolp::Forge	access:protected	signature:()
+unlockJobs	../include/doolp/doolp-doolpforge.h	/^  inline void unlockJobs() { pthread_mutex_unlock ( &jobMutex ); }$/;"	kind:function	line:201	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::unlockJobs	../include/doolp/doolp-doolpforge.h	/^  inline void unlockJobs() { pthread_mutex_unlock ( &jobMutex ); }$/;"	kind:function	line:201	language:C++	class:Doolp::Forge	access:protected	signature:()
+lockJobs	../include/doolp/doolp-doolpforge.h	/^  inline void lockJobs(); inline void unlockJobs ();$/;"	kind:prototype	line:203	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::lockJobs	../include/doolp/doolp-doolpforge.h	/^  inline void lockJobs(); inline void unlockJobs ();$/;"	kind:prototype	line:203	language:C++	class:Doolp::Forge	access:protected	signature:()
+unlockJobs	../include/doolp/doolp-doolpforge.h	/^  inline void lockJobs(); inline void unlockJobs ();$/;"	kind:prototype	line:203	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::unlockJobs	../include/doolp/doolp-doolpforge.h	/^  inline void lockJobs(); inline void unlockJobs ();$/;"	kind:prototype	line:203	language:C++	class:Doolp::Forge	access:protected	signature:()
+setAsyncCall	../include/doolp/doolp-doolpforge.h	/^  bool setAsyncCall ( Call ** call );$/;"	kind:prototype	line:207	language:C++	class:Doolp::Forge	access:public	signature:( Call ** call )
+Doolp::Forge::setAsyncCall	../include/doolp/doolp-doolpforge.h	/^  bool setAsyncCall ( Call ** call );$/;"	kind:prototype	line:207	language:C++	class:Doolp::Forge	access:public	signature:( Call ** call )
+newCall	../include/doolp/doolp-doolpforge.h	/^  Call * newCall ( SlotVirtual * slot, Object * obj, AgentId toAgentId );$/;"	kind:prototype	line:209	language:C++	class:Doolp::Forge	access:public	signature:( SlotVirtual * slot, Object * obj, AgentId toAgentId )
+Doolp::Forge::newCall	../include/doolp/doolp-doolpforge.h	/^  Call * newCall ( SlotVirtual * slot, Object * obj, AgentId toAgentId );$/;"	kind:prototype	line:209	language:C++	class:Doolp::Forge	access:public	signature:( SlotVirtual * slot, Object * obj, AgentId toAgentId )
+newCall	../include/doolp/doolp-doolpforge.h	/^  Call * newCall ( FullContextId * fullContextId, $/;"	kind:prototype	line:210	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * fullContextId, SlotVirtual * slot, Object * obj, AgentId toAgentId )
+Doolp::Forge::newCall	../include/doolp/doolp-doolpforge.h	/^  Call * newCall ( FullContextId * fullContextId, $/;"	kind:prototype	line:210	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * fullContextId, SlotVirtual * slot, Object * obj, AgentId toAgentId )
+addCall	../include/doolp/doolp-doolpforge.h	/^  bool addCall ( Call * call );$/;"	kind:prototype	line:215	language:C++	class:Doolp::Forge	access:public	signature:( Call * call )
+Doolp::Forge::addCall	../include/doolp/doolp-doolpforge.h	/^  bool addCall ( Call * call );$/;"	kind:prototype	line:215	language:C++	class:Doolp::Forge	access:public	signature:( Call * call )
+waitCall	../include/doolp/doolp-doolpforge.h	/^  bool waitCall ( Call * call );$/;"	kind:prototype	line:216	language:C++	class:Doolp::Forge	access:public	signature:( Call * call )
+Doolp::Forge::waitCall	../include/doolp/doolp-doolpforge.h	/^  bool waitCall ( Call * call );$/;"	kind:prototype	line:216	language:C++	class:Doolp::Forge	access:public	signature:( Call * call )
+findCall	../include/doolp/doolp-doolpforge.h	/^  Call * findCall ( FullContextId * fullContextId );$/;"	kind:prototype	line:217	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * fullContextId )
+Doolp::Forge::findCall	../include/doolp/doolp-doolpforge.h	/^  Call * findCall ( FullContextId * fullContextId );$/;"	kind:prototype	line:217	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * fullContextId )
+checkCall	../include/doolp/doolp-doolpforge.h	/^  bool checkCall ( Call * call );$/;"	kind:prototype	line:218	language:C++	class:Doolp::Forge	access:public	signature:( Call * call )
+Doolp::Forge::checkCall	../include/doolp/doolp-doolpforge.h	/^  bool checkCall ( Call * call );$/;"	kind:prototype	line:218	language:C++	class:Doolp::Forge	access:public	signature:( Call * call )
+finishedCall	../include/doolp/doolp-doolpforge.h	/^  bool finishedCall ( Call * call );$/;"	kind:prototype	line:219	language:C++	class:Doolp::Forge	access:public	signature:( Call * call )
+Doolp::Forge::finishedCall	../include/doolp/doolp-doolpforge.h	/^  bool finishedCall ( Call * call );$/;"	kind:prototype	line:219	language:C++	class:Doolp::Forge	access:public	signature:( Call * call )
+removeCall	../include/doolp/doolp-doolpforge.h	/^  bool removeCall ( Call * call );$/;"	kind:prototype	line:220	language:C++	class:Doolp::Forge	access:public	signature:( Call * call )
+Doolp::Forge::removeCall	../include/doolp/doolp-doolpforge.h	/^  bool removeCall ( Call * call );$/;"	kind:prototype	line:220	language:C++	class:Doolp::Forge	access:public	signature:( Call * call )
+jobs	../include/doolp/doolp-doolpforge.h	/^  list<Job*> jobs;$/;"	kind:member	line:226	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::jobs	../include/doolp/doolp-doolpforge.h	/^  list<Job*> jobs;$/;"	kind:member	line:226	language:C++	class:Doolp::Forge	access:protected
+startJob	../include/doolp/doolp-doolpforge.h	/^  bool startJob  (FullContextId * fromContextId, $/;"	kind:prototype	line:228	language:C++	class:Doolp::Forge	access:public	signature:(FullContextId * fromContextId, ObjectId objId, ObjectNameId objNameId, ObjectSlotId slotId, Connection * connection )
+Doolp::Forge::startJob	../include/doolp/doolp-doolpforge.h	/^  bool startJob  (FullContextId * fromContextId, $/;"	kind:prototype	line:228	language:C++	class:Doolp::Forge	access:public	signature:(FullContextId * fromContextId, ObjectId objId, ObjectNameId objNameId, ObjectSlotId slotId, Connection * connection )
+forwardJob	../include/doolp/doolp-doolpforge.h	/^  bool forwardJob ( Job *job );$/;"	kind:prototype	line:233	language:C++	class:Doolp::Forge	access:public	signature:( Job *job )
+Doolp::Forge::forwardJob	../include/doolp/doolp-doolpforge.h	/^  bool forwardJob ( Job *job );$/;"	kind:prototype	line:233	language:C++	class:Doolp::Forge	access:public	signature:( Job *job )
+runJob	../include/doolp/doolp-doolpforge.h	/^  bool runJob (Job * run);$/;"	kind:prototype	line:234	language:C++	class:Doolp::Forge	access:public	signature:(Job * run)
+Doolp::Forge::runJob	../include/doolp/doolp-doolpforge.h	/^  bool runJob (Job * run);$/;"	kind:prototype	line:234	language:C++	class:Doolp::Forge	access:public	signature:(Job * run)
+runEnqueuedJob	../include/doolp/doolp-doolpforge.h	/^  bool runEnqueuedJob ( ); \/\/ Runs next enqueued job..$/;"	kind:prototype	line:236	language:C++	class:Doolp::Forge	access:public	signature:( )
+Doolp::Forge::runEnqueuedJob	../include/doolp/doolp-doolpforge.h	/^  bool runEnqueuedJob ( ); \/\/ Runs next enqueued job..$/;"	kind:prototype	line:236	language:C++	class:Doolp::Forge	access:public	signature:( )
+findJob	../include/doolp/doolp-doolpforge.h	/^  Job * findJob ( FullContextId * fullContextId );$/;"	kind:prototype	line:237	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * fullContextId )
+Doolp::Forge::findJob	../include/doolp/doolp-doolpforge.h	/^  Job * findJob ( FullContextId * fullContextId );$/;"	kind:prototype	line:237	language:C++	class:Doolp::Forge	access:public	signature:( FullContextId * fullContextId )
+removeJob	../include/doolp/doolp-doolpforge.h	/^  bool removeJob ( Job * job );$/;"	kind:prototype	line:238	language:C++	class:Doolp::Forge	access:public	signature:( Job * job )
+Doolp::Forge::removeJob	../include/doolp/doolp-doolpforge.h	/^  bool removeJob ( Job * job );$/;"	kind:prototype	line:238	language:C++	class:Doolp::Forge	access:public	signature:( Job * job )
+connections	../include/doolp/doolp-doolpforge.h	/^  list<Connection*> connections;$/;"	kind:member	line:244	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::connections	../include/doolp/doolp-doolpforge.h	/^  list<Connection*> connections;$/;"	kind:member	line:244	language:C++	class:Doolp::Forge	access:protected
+connectionMutex	../include/doolp/doolp-doolpforge.h	/^  pthread_mutex_t connectionMutex;$/;"	kind:member	line:246	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::connectionMutex	../include/doolp/doolp-doolpforge.h	/^  pthread_mutex_t connectionMutex;$/;"	kind:member	line:246	language:C++	class:Doolp::Forge	access:protected
+lockConnections	../include/doolp/doolp-doolpforge.h	/^  inline void lockConnections()$/;"	kind:function	line:247	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::lockConnections	../include/doolp/doolp-doolpforge.h	/^  inline void lockConnections()$/;"	kind:function	line:247	language:C++	class:Doolp::Forge	access:protected	signature:()
+unlockConnections	../include/doolp/doolp-doolpforge.h	/^  inline void unlockConnections() { pthread_mutex_unlock ( &connectionMutex ); }$/;"	kind:function	line:251	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::unlockConnections	../include/doolp/doolp-doolpforge.h	/^  inline void unlockConnections() { pthread_mutex_unlock ( &connectionMutex ); }$/;"	kind:function	line:251	language:C++	class:Doolp::Forge	access:protected	signature:()
+lockConnections	../include/doolp/doolp-doolpforge.h	/^  inline void lockConnections(); inline void unlockConnections ();$/;"	kind:prototype	line:253	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::lockConnections	../include/doolp/doolp-doolpforge.h	/^  inline void lockConnections(); inline void unlockConnections ();$/;"	kind:prototype	line:253	language:C++	class:Doolp::Forge	access:protected	signature:()
+unlockConnections	../include/doolp/doolp-doolpforge.h	/^  inline void lockConnections(); inline void unlockConnections ();$/;"	kind:prototype	line:253	language:C++	class:Doolp::Forge	access:protected	signature:()
+Doolp::Forge::unlockConnections	../include/doolp/doolp-doolpforge.h	/^  inline void lockConnections(); inline void unlockConnections ();$/;"	kind:prototype	line:253	language:C++	class:Doolp::Forge	access:protected	signature:()
+addConnection	../include/doolp/doolp-doolpforge.h	/^  bool addConnection ( Connection * connection );$/;"	kind:prototype	line:257	language:C++	class:Doolp::Forge	access:public	signature:( Connection * connection )
+Doolp::Forge::addConnection	../include/doolp/doolp-doolpforge.h	/^  bool addConnection ( Connection * connection );$/;"	kind:prototype	line:257	language:C++	class:Doolp::Forge	access:public	signature:( Connection * connection )
+removeConnection	../include/doolp/doolp-doolpforge.h	/^  bool removeConnection ( Connection * connection );$/;"	kind:prototype	line:258	language:C++	class:Doolp::Forge	access:public	signature:( Connection * connection )
+Doolp::Forge::removeConnection	../include/doolp/doolp-doolpforge.h	/^  bool removeConnection ( Connection * connection );$/;"	kind:prototype	line:258	language:C++	class:Doolp::Forge	access:public	signature:( Connection * connection )
+tryConnect	../include/doolp/doolp-doolpforge.h	/^  bool tryConnect ( const char * connectionString );$/;"	kind:prototype	line:259	language:C++	class:Doolp::Forge	access:public	signature:( const char * connectionString )
+Doolp::Forge::tryConnect	../include/doolp/doolp-doolpforge.h	/^  bool tryConnect ( const char * connectionString );$/;"	kind:prototype	line:259	language:C++	class:Doolp::Forge	access:public	signature:( const char * connectionString )
+getConnectionForAgentId	../include/doolp/doolp-doolpforge.h	/^  Connection * getConnectionForAgentId (AgentId agentId )$/;"	kind:function	line:261	language:C++	class:Doolp::Forge	access:public	signature:(AgentId agentId )
+Doolp::Forge::getConnectionForAgentId	../include/doolp/doolp-doolpforge.h	/^  Connection * getConnectionForAgentId (AgentId agentId )$/;"	kind:function	line:261	language:C++	class:Doolp::Forge	access:public	signature:(AgentId agentId )
+getConnectionForAgentId	../include/doolp/doolp-doolpforge.h	/^  Connection * getConnectionForAgentId (AgentId agentId, bool strict );$/;"	kind:prototype	line:263	language:C++	class:Doolp::Forge	access:public	signature:(AgentId agentId, bool strict )
+Doolp::Forge::getConnectionForAgentId	../include/doolp/doolp-doolpforge.h	/^  Connection * getConnectionForAgentId (AgentId agentId, bool strict );$/;"	kind:prototype	line:263	language:C++	class:Doolp::Forge	access:public	signature:(AgentId agentId, bool strict )
+getDefaultConnection	../include/doolp/doolp-doolpforge.h	/^  Connection * getDefaultConnection ( )$/;"	kind:function	line:265	language:C++	class:Doolp::Forge	access:public	signature:( )
+Doolp::Forge::getDefaultConnection	../include/doolp/doolp-doolpforge.h	/^  Connection * getDefaultConnection ( )$/;"	kind:function	line:265	language:C++	class:Doolp::Forge	access:public	signature:( )
+services	../include/doolp/doolp-doolpforge.h	/^  ForgeServices * services;$/;"	kind:member	line:272	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::services	../include/doolp/doolp-doolpforge.h	/^  ForgeServices * services;$/;"	kind:member	line:272	language:C++	class:Doolp::Forge	access:protected
+getServices	../include/doolp/doolp-doolpforge.h	/^  inline ForgeServices * getServices() const { return services; }$/;"	kind:function	line:274	language:C++	class:Doolp::Forge	access:public	signature:() const
+Doolp::Forge::getServices	../include/doolp/doolp-doolpforge.h	/^  inline ForgeServices * getServices() const { return services; }$/;"	kind:function	line:274	language:C++	class:Doolp::Forge	access:public	signature:() const
+getAgentIdForService	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<AgentId,string&> getAgentIdForService;$/;"	kind:member	line:275	language:C++	class:Doolp::Forge	access:public
+Doolp::Forge::getAgentIdForService	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<AgentId,string&> getAgentIdForService;$/;"	kind:member	line:275	language:C++	class:Doolp::Forge	access:public
+getAgentIdForService_char	../include/doolp/doolp-doolpforge.h	/^  AgentId getAgentIdForService_char ( char * sc );$/;"	kind:prototype	line:276	language:C++	class:Doolp::Forge	access:public	signature:( char * sc )
+Doolp::Forge::getAgentIdForService_char	../include/doolp/doolp-doolpforge.h	/^  AgentId getAgentIdForService_char ( char * sc );$/;"	kind:prototype	line:276	language:C++	class:Doolp::Forge	access:public	signature:( char * sc )
+getAgentIdForService	../include/doolp/doolp-doolpforge.h	/^  AgentId doolpfunclocal(getAgentIdForService) ( string& serviceName );  $/;"	kind:prototype	line:277	language:C++	class:Doolp::Forge	access:public	signature:( string& serviceName )
+Doolp::Forge::getAgentIdForService	../include/doolp/doolp-doolpforge.h	/^  AgentId doolpfunclocal(getAgentIdForService) ( string& serviceName );  $/;"	kind:prototype	line:277	language:C++	class:Doolp::Forge	access:public	signature:( string& serviceName )
+getService	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<Object*,string&> getService;$/;"	kind:member	line:279	language:C++	class:Doolp::Forge	access:public
+Doolp::Forge::getService	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<Object*,string&> getService;$/;"	kind:member	line:279	language:C++	class:Doolp::Forge	access:public
+getService_char	../include/doolp/doolp-doolpforge.h	/^  Object * getService_char ( char * sc );$/;"	kind:prototype	line:280	language:C++	class:Doolp::Forge	access:public	signature:( char * sc )
+Doolp::Forge::getService_char	../include/doolp/doolp-doolpforge.h	/^  Object * getService_char ( char * sc );$/;"	kind:prototype	line:280	language:C++	class:Doolp::Forge	access:public	signature:( char * sc )
+getService	../include/doolp/doolp-doolpforge.h	/^  Object * doolpfunclocal(getService) ( string & serviceName );$/;"	kind:prototype	line:281	language:C++	class:Doolp::Forge	access:public	signature:( string & serviceName )
+Doolp::Forge::getService	../include/doolp/doolp-doolpforge.h	/^  Object * doolpfunclocal(getService) ( string & serviceName );$/;"	kind:prototype	line:281	language:C++	class:Doolp::Forge	access:public	signature:( string & serviceName )
+getService_chooseAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId getService_chooseAgentId ( string & serviceName );$/;"	kind:prototype	line:282	language:C++	class:Doolp::Forge	access:public	signature:( string & serviceName )
+Doolp::Forge::getService_chooseAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId getService_chooseAgentId ( string & serviceName );$/;"	kind:prototype	line:282	language:C++	class:Doolp::Forge	access:public	signature:( string & serviceName )
+probeServices	../include/doolp/doolp-doolpforge.h	/^  bool probeServices ( AgentId agentId );$/;"	kind:prototype	line:284	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+Doolp::Forge::probeServices	../include/doolp/doolp-doolpforge.h	/^  bool probeServices ( AgentId agentId );$/;"	kind:prototype	line:284	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+tellServices	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<list<string> *,AgentId> tellServices;$/;"	kind:member	line:285	language:C++	class:Doolp::Forge	access:public
+Doolp::Forge::tellServices	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<list<string> *,AgentId> tellServices;$/;"	kind:member	line:285	language:C++	class:Doolp::Forge	access:public
+tellServices	../include/doolp/doolp-doolpforge.h	/^  list<string> * doolpfunclocal(tellServices) ( AgentId agentId );$/;"	kind:prototype	line:286	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+Doolp::Forge::tellServices	../include/doolp/doolp-doolpforge.h	/^  list<string> * doolpfunclocal(tellServices) ( AgentId agentId );$/;"	kind:prototype	line:286	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+tellServices_chooseAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId tellServices_chooseAgentId ( AgentId agentId )$/;"	kind:function	line:287	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+Doolp::Forge::tellServices_chooseAgentId	../include/doolp/doolp-doolpforge.h	/^  AgentId tellServices_chooseAgentId ( AgentId agentId )$/;"	kind:function	line:287	language:C++	class:Doolp::Forge	access:public	signature:( AgentId agentId )
+objectIndexer	../include/doolp/doolp-doolpforge.h	/^  ObjectIndexer * objectIndexer;$/;"	kind:member	line:294	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::objectIndexer	../include/doolp/doolp-doolpforge.h	/^  ObjectIndexer * objectIndexer;$/;"	kind:member	line:294	language:C++	class:Doolp::Forge	access:protected
+getFreeObjectId	../include/doolp/doolp-doolpforge.h	/^  ObjectId getFreeObjectId (); \/\/ { return nextObjectId++; }$/;"	kind:prototype	line:296	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getFreeObjectId	../include/doolp/doolp-doolpforge.h	/^  ObjectId getFreeObjectId (); \/\/ { return nextObjectId++; }$/;"	kind:prototype	line:296	language:C++	class:Doolp::Forge	access:public	signature:()
+getObjectIndexer	../include/doolp/doolp-doolpforge.h	/^  ObjectIndexer * getObjectIndexer ( );$/;"	kind:prototype	line:297	language:C++	class:Doolp::Forge	access:public	signature:( )
+Doolp::Forge::getObjectIndexer	../include/doolp/doolp-doolpforge.h	/^  ObjectIndexer * getObjectIndexer ( );$/;"	kind:prototype	line:297	language:C++	class:Doolp::Forge	access:public	signature:( )
+setObjectIndexer	../include/doolp/doolp-doolpforge.h	/^  bool setObjectIndexer ( ObjectIndexer * indexer )$/;"	kind:function	line:298	language:C++	class:Doolp::Forge	access:public	signature:( ObjectIndexer * indexer )
+Doolp::Forge::setObjectIndexer	../include/doolp/doolp-doolpforge.h	/^  bool setObjectIndexer ( ObjectIndexer * indexer )$/;"	kind:function	line:298	language:C++	class:Doolp::Forge	access:public	signature:( ObjectIndexer * indexer )
+namingService	../include/doolp/doolp-doolpforge.h	/^  Naming * namingService;$/;"	kind:member	line:306	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::namingService	../include/doolp/doolp-doolpforge.h	/^  Naming * namingService;$/;"	kind:member	line:306	language:C++	class:Doolp::Forge	access:protected
+getNaming	../include/doolp/doolp-doolpforge.h	/^  Naming * getNaming ();$/;"	kind:prototype	line:308	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getNaming	../include/doolp/doolp-doolpforge.h	/^  Naming * getNaming ();$/;"	kind:prototype	line:308	language:C++	class:Doolp::Forge	access:public	signature:()
+setNaming	../include/doolp/doolp-doolpforge.h	/^  bool setNaming ( Naming * _namingService );$/;"	kind:prototype	line:309	language:C++	class:Doolp::Forge	access:public	signature:( Naming * _namingService )
+Doolp::Forge::setNaming	../include/doolp/doolp-doolpforge.h	/^  bool setNaming ( Naming * _namingService );$/;"	kind:prototype	line:309	language:C++	class:Doolp::Forge	access:public	signature:( Naming * _namingService )
+persistanceService	../include/doolp/doolp-doolpforge.h	/^  Persistance * persistanceService;$/;"	kind:member	line:315	language:C++	class:Doolp::Forge	access:protected
+Doolp::Forge::persistanceService	../include/doolp/doolp-doolpforge.h	/^  Persistance * persistanceService;$/;"	kind:member	line:315	language:C++	class:Doolp::Forge	access:protected
+getPersistance	../include/doolp/doolp-doolpforge.h	/^  Persistance * getPersistance ();$/;"	kind:prototype	line:317	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::getPersistance	../include/doolp/doolp-doolpforge.h	/^  Persistance * getPersistance ();$/;"	kind:prototype	line:317	language:C++	class:Doolp::Forge	access:public	signature:()
+setPersistance	../include/doolp/doolp-doolpforge.h	/^  bool setPersistance ( Persistance * _persistanceService );$/;"	kind:prototype	line:318	language:C++	class:Doolp::Forge	access:public	signature:( Persistance * _persistanceService )
+Doolp::Forge::setPersistance	../include/doolp/doolp-doolpforge.h	/^  bool setPersistance ( Persistance * _persistanceService );$/;"	kind:prototype	line:318	language:C++	class:Doolp::Forge	access:public	signature:( Persistance * _persistanceService )
+getNamedObject	../include/doolp/doolp-doolpforge.h	/^  Object * getNamedObject ( string & objectName );$/;"	kind:prototype	line:324	language:C++	class:Doolp::Forge	access:protected	signature:( string & objectName )
+Doolp::Forge::getNamedObject	../include/doolp/doolp-doolpforge.h	/^  Object * getNamedObject ( string & objectName );$/;"	kind:prototype	line:324	language:C++	class:Doolp::Forge	access:protected	signature:( string & objectName )
+bindContext	../include/doolp/doolp-doolpforge.h	/^  bool bindContext ( string &contextName );$/;"	kind:prototype	line:326	language:C++	class:Doolp::Forge	access:public	signature:( string &contextName )
+Doolp::Forge::bindContext	../include/doolp/doolp-doolpforge.h	/^  bool bindContext ( string &contextName );$/;"	kind:prototype	line:326	language:C++	class:Doolp::Forge	access:public	signature:( string &contextName )
+bindContext	../include/doolp/doolp-doolpforge.h	/^  bool bindContext ( const char *contextName ) { string __name = contextName; return bindContext ( __name ); }$/;"	kind:function	line:327	language:C++	class:Doolp::Forge	access:public	signature:( const char *contextName )
+Doolp::Forge::bindContext	../include/doolp/doolp-doolpforge.h	/^  bool bindContext ( const char *contextName ) { string __name = contextName; return bindContext ( __name ); }$/;"	kind:function	line:327	language:C++	class:Doolp::Forge	access:public	signature:( const char *contextName )
+commit	../include/doolp/doolp-doolpforge.h	/^  bool commit ();$/;"	kind:prototype	line:328	language:C++	class:Doolp::Forge	access:public	signature:()
+Doolp::Forge::commit	../include/doolp/doolp-doolpforge.h	/^  bool commit ();$/;"	kind:prototype	line:328	language:C++	class:Doolp::Forge	access:public	signature:()
+getObject	../include/doolp/doolp-doolpforge.h	/^    T_Object * getObject ( string &objectName )$/;"	kind:function	line:330	language:C++	class:Doolp::Forge	access:public	signature:( string &objectName )
+Doolp::Forge::getObject	../include/doolp/doolp-doolpforge.h	/^    T_Object * getObject ( string &objectName )$/;"	kind:function	line:330	language:C++	class:Doolp::Forge	access:public	signature:( string &objectName )
+getObject	../include/doolp/doolp-doolpforge.h	/^    T_Object * getObject ( const char * objectName )$/;"	kind:function	line:333	language:C++	class:Doolp::Forge	access:public	signature:( const char * objectName )
+Doolp::Forge::getObject	../include/doolp/doolp-doolpforge.h	/^    T_Object * getObject ( const char * objectName )$/;"	kind:function	line:333	language:C++	class:Doolp::Forge	access:public	signature:( const char * objectName )
+authPlain	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<bool,char*,char*> authPlain;$/;"	kind:member	line:338	language:C++	class:Doolp::Forge	access:public
+Doolp::Forge::authPlain	../include/doolp/doolp-doolpforge.h	/^  doolpfunc<bool,char*,char*> authPlain;$/;"	kind:member	line:338	language:C++	class:Doolp::Forge	access:public
+authPlain	../include/doolp/doolp-doolpforge.h	/^  bool doolpfunclocal(authPlain) ( char * name, char * password );$/;"	kind:prototype	line:339	language:C++	class:Doolp::Forge	access:public	signature:( char * name, char * password )
+Doolp::Forge::authPlain	../include/doolp/doolp-doolpforge.h	/^  bool doolpfunclocal(authPlain) ( char * name, char * password );$/;"	kind:prototype	line:339	language:C++	class:Doolp::Forge	access:public	signature:( char * name, char * password )
+logStats	../include/doolp/doolp-doolpforge.h	/^  void logStats ( );$/;"	kind:prototype	line:345	language:C++	class:Doolp::Forge	access:public	signature:( )
+Doolp::Forge::logStats	../include/doolp/doolp-doolpforge.h	/^  void logStats ( );$/;"	kind:prototype	line:345	language:C++	class:Doolp::Forge	access:public	signature:( )
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpforge.h	346;"	kind:macro	line:346	language:C++
+forge	../include/doolp/doolp-doolpforge.h	/^  Forge * forge;$/;"	kind:member	line:351	language:C++	struct:Doolp::<anonymous>	access:public
+Doolp::<anonymous>::forge	../include/doolp/doolp-doolpforge.h	/^  Forge * forge;$/;"	kind:member	line:351	language:C++	struct:Doolp::<anonymous>	access:public
+context	../include/doolp/doolp-doolpforge.h	/^  Context * context;$/;"	kind:member	line:352	language:C++	struct:Doolp::<anonymous>	access:public
+Doolp::<anonymous>::context	../include/doolp/doolp-doolpforge.h	/^  Context * context;$/;"	kind:member	line:352	language:C++	struct:Doolp::<anonymous>	access:public
+start_routine	../include/doolp/doolp-doolpforge.h	/^  void *(*start_routine)(void*);$/;"	kind:member	line:353	language:C++	struct:Doolp::<anonymous>	access:public
+Doolp::<anonymous>::start_routine	../include/doolp/doolp-doolpforge.h	/^  void *(*start_routine)(void*);$/;"	kind:member	line:353	language:C++	struct:Doolp::<anonymous>	access:public
+arg	../include/doolp/doolp-doolpforge.h	/^  void * arg;$/;"	kind:member	line:354	language:C++	struct:Doolp::<anonymous>	access:public
+Doolp::<anonymous>::arg	../include/doolp/doolp-doolpforge.h	/^  void * arg;$/;"	kind:member	line:354	language:C++	struct:Doolp::<anonymous>	access:public
+ForgeSetSpecificStruct	../include/doolp/doolp-doolpforge.h	/^} ForgeSetSpecificStruct;$/;"	kind:typedef	line:355	language:C++	namespace:Doolp
+Doolp::ForgeSetSpecificStruct	../include/doolp/doolp-doolpforge.h	/^} ForgeSetSpecificStruct;$/;"	kind:typedef	line:355	language:C++	namespace:Doolp
+__DOOLP_DOOLPOBJECTINDEXER_H	../include/doolp/doolp-doolpobjectindexer.h	2;"	kind:macro	line:2	language:C++
+Doolp	../include/doolp/doolp-doolpobjectindexer.h	/^namespace Doolp$/;"	kind:namespace	line:10	language:C++
+ObjectIndexer	../include/doolp/doolp-doolpobjectindexer.h	/^  class ObjectIndexer : public Object$/;"	kind:class	line:12	language:C++	namespace:Doolp	inherits:Object
+Doolp::ObjectIndexer	../include/doolp/doolp-doolpobjectindexer.h	/^  class ObjectIndexer : public Object$/;"	kind:class	line:12	language:C++	namespace:Doolp	inherits:Object
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpobjectindexer.h	14;"	kind:macro	line:14	language:C++
+DoolpObject_stdFeatures	../include/doolp/doolp-doolpobjectindexer.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:15	language:C++	class:Doolp::ObjectIndexer	access:private	signature:( )
+Doolp::ObjectIndexer::DoolpObject_stdFeatures	../include/doolp/doolp-doolpobjectindexer.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:15	language:C++	class:Doolp::ObjectIndexer	access:private	signature:( )
+ObjectIndexer	../include/doolp/doolp-doolpobjectindexer.h	/^    ObjectIndexer () { __DOOLP_Log ( "New Indexer\\n" ); }$/;"	kind:function	line:18	language:C++	class:Doolp::ObjectIndexer	access:public	signature:()
+Doolp::ObjectIndexer::ObjectIndexer	../include/doolp/doolp-doolpobjectindexer.h	/^    ObjectIndexer () { __DOOLP_Log ( "New Indexer\\n" ); }$/;"	kind:function	line:18	language:C++	class:Doolp::ObjectIndexer	access:public	signature:()
+getFreeObjectId	../include/doolp/doolp-doolpobjectindexer.h	/^    virtual ObjectId getFreeObjectId () { Bug ( "Should not been called !\\n" ); return 0; }$/;"	kind:function	line:19	language:C++	class:Doolp::ObjectIndexer	access:public	implementation:virtual	signature:()
+Doolp::ObjectIndexer::getFreeObjectId	../include/doolp/doolp-doolpobjectindexer.h	/^    virtual ObjectId getFreeObjectId () { Bug ( "Should not been called !\\n" ); return 0; }$/;"	kind:function	line:19	language:C++	class:Doolp::ObjectIndexer	access:public	implementation:virtual	signature:()
+setOptions	../include/doolp/doolp-doolpobjectindexer.h	/^    void setOptions ()$/;"	kind:function	line:20	language:C++	class:Doolp::ObjectIndexer	access:public	signature:()
+Doolp::ObjectIndexer::setOptions	../include/doolp/doolp-doolpobjectindexer.h	/^    void setOptions ()$/;"	kind:function	line:20	language:C++	class:Doolp::ObjectIndexer	access:public	signature:()
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpobjectindexer.h	26;"	kind:macro	line:26	language:C++
+__DOOLP_DOOLPOBJECTINDEXERBYRULE_H	../include/doolp/doolp-doolpobjectindexerbyrule.h	2;"	kind:macro	line:2	language:C++
+Doolp	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^namespace Doolp$/;"	kind:namespace	line:8	language:C++
+ObjectIndexerByRule	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^  class ObjectIndexerByRule : public ObjectIndexer$/;"	kind:class	line:10	language:C++	namespace:Doolp	inherits:ObjectIndexer
+Doolp::ObjectIndexerByRule	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^  class ObjectIndexerByRule : public ObjectIndexer$/;"	kind:class	line:10	language:C++	namespace:Doolp	inherits:ObjectIndexer
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpobjectindexerbyrule.h	12;"	kind:macro	line:12	language:C++
+DoolpObject_stdFeatures	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:13	language:C++	class:Doolp::ObjectIndexerByRule	access:private	signature:( )
+Doolp::ObjectIndexerByRule::DoolpObject_stdFeatures	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:13	language:C++	class:Doolp::ObjectIndexerByRule	access:private	signature:( )
+ObjectIndexerByRule	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    ObjectIndexerByRule ( ObjectId _start, ObjectId _step )$/;"	kind:function	line:15	language:C++	class:Doolp::ObjectIndexerByRule	access:public	signature:( ObjectId _start, ObjectId _step )
+Doolp::ObjectIndexerByRule::ObjectIndexerByRule	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    ObjectIndexerByRule ( ObjectId _start, ObjectId _step )$/;"	kind:function	line:15	language:C++	class:Doolp::ObjectIndexerByRule	access:public	signature:( ObjectId _start, ObjectId _step )
+start	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    doolpparam<ObjectId> start;$/;"	kind:member	line:24	language:C++	class:Doolp::ObjectIndexerByRule	access:public
+Doolp::ObjectIndexerByRule::start	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    doolpparam<ObjectId> start;$/;"	kind:member	line:24	language:C++	class:Doolp::ObjectIndexerByRule	access:public
+step	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    doolpparam<ObjectId> step;$/;"	kind:member	line:25	language:C++	class:Doolp::ObjectIndexerByRule	access:public
+Doolp::ObjectIndexerByRule::step	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    doolpparam<ObjectId> step;$/;"	kind:member	line:25	language:C++	class:Doolp::ObjectIndexerByRule	access:public
+getStart	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    doolpfunc<ObjectId,bool> getStart;$/;"	kind:member	line:28	language:C++	class:Doolp::ObjectIndexerByRule	access:public
+Doolp::ObjectIndexerByRule::getStart	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    doolpfunc<ObjectId,bool> getStart;$/;"	kind:member	line:28	language:C++	class:Doolp::ObjectIndexerByRule	access:public
+getStart_local	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    inline ObjectId getStart_local ( )$/;"	kind:function	line:30	language:C++	class:Doolp::ObjectIndexerByRule	access:public	signature:( )
+Doolp::ObjectIndexerByRule::getStart_local	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    inline ObjectId getStart_local ( )$/;"	kind:function	line:30	language:C++	class:Doolp::ObjectIndexerByRule	access:public	signature:( )
+setNewRule	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    doolpfunc<ObjectId,ObjectId> setNewRule;$/;"	kind:member	line:34	language:C++	class:Doolp::ObjectIndexerByRule	access:public
+Doolp::ObjectIndexerByRule::setNewRule	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    doolpfunc<ObjectId,ObjectId> setNewRule;$/;"	kind:member	line:34	language:C++	class:Doolp::ObjectIndexerByRule	access:public
+setNewRule_local	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    ObjectId setNewRule_local ( ObjectId newStep );$/;"	kind:prototype	line:35	language:C++	class:Doolp::ObjectIndexerByRule	access:public	signature:( ObjectId newStep )
+Doolp::ObjectIndexerByRule::setNewRule_local	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    ObjectId setNewRule_local ( ObjectId newStep );$/;"	kind:prototype	line:35	language:C++	class:Doolp::ObjectIndexerByRule	access:public	signature:( ObjectId newStep )
+getFreeObjectId	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    ObjectId getFreeObjectId();$/;"	kind:prototype	line:37	language:C++	class:Doolp::ObjectIndexerByRule	access:public	signature:()
+Doolp::ObjectIndexerByRule::getFreeObjectId	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    ObjectId getFreeObjectId();$/;"	kind:prototype	line:37	language:C++	class:Doolp::ObjectIndexerByRule	access:public	signature:()
+setOptions	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    void setOptions () $/;"	kind:function	line:42	language:C++	class:Doolp::ObjectIndexerByRule	access:public	signature:()
+Doolp::ObjectIndexerByRule::setOptions	../include/doolp/doolp-doolpobjectindexerbyrule.h	/^    void setOptions () $/;"	kind:function	line:42	language:C++	class:Doolp::ObjectIndexerByRule	access:public	signature:()
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpobjectindexerbyrule.h	48;"	kind:macro	line:48	language:C++
+__DOOLP_DOOLPEXCEPTIONS_H	../include/doolp/doolp-doolpexceptions.h	2;"	kind:macro	line:2	language:C++
+Doolp	../include/doolp/doolp-doolpexceptions.h	/^namespace Doolp$/;"	kind:namespace	line:6	language:C++
+__Doolp_DoolpException	../include/doolp/doolp-doolpexceptions.h	/^  class __Doolp_DoolpException(CallNoAgentFound,"Unable to find agent for this call !" );$/;"	kind:prototype	line:8	language:C++	namespace:Doolp	signature:(CallNoAgentFound,Ó )
+Doolp::__Doolp_DoolpException	../include/doolp/doolp-doolpexceptions.h	/^  class __Doolp_DoolpException(CallNoAgentFound,"Unable to find agent for this call !" );$/;"	kind:prototype	line:8	language:C++	namespace:Doolp	signature:(CallNoAgentFound,Ó )
+__Doolp_DoolpException	../include/doolp/doolp-doolpexceptions.h	/^  class __Doolp_DoolpException(NoForgeServiceFound,"No service found");$/;"	kind:prototype	line:9	language:C++	namespace:Doolp	signature:(NoForgeServiceFound,Ó)
+Doolp::__Doolp_DoolpException	../include/doolp/doolp-doolpexceptions.h	/^  class __Doolp_DoolpException(NoForgeServiceFound,"No service found");$/;"	kind:prototype	line:9	language:C++	namespace:Doolp	signature:(NoForgeServiceFound,Ó)
+__Doolp_DoolpException	../include/doolp/doolp-doolpexceptions.h	/^  class __Doolp_DoolpException(NoObjectFound,"No object found");$/;"	kind:prototype	line:10	language:C++	namespace:Doolp	signature:(NoObjectFound,Ó)
+Doolp::__Doolp_DoolpException	../include/doolp/doolp-doolpexceptions.h	/^  class __Doolp_DoolpException(NoObjectFound,"No object found");$/;"	kind:prototype	line:10	language:C++	namespace:Doolp	signature:(NoObjectFound,Ó)
+__Doolp_DoolpException	../include/doolp/doolp-doolpexceptions.h	/^  class __Doolp_DoolpException(NoObjectSlotFound,"No object slot found");$/;"	kind:prototype	line:11	language:C++	namespace:Doolp	signature:(NoObjectSlotFound,Ó)
+Doolp::__Doolp_DoolpException	../include/doolp/doolp-doolpexceptions.h	/^  class __Doolp_DoolpException(NoObjectSlotFound,"No object slot found");$/;"	kind:prototype	line:11	language:C++	namespace:Doolp	signature:(NoObjectSlotFound,Ó)
+__Doolp_DoolpException	../include/doolp/doolp-doolpexceptions.h	/^  class __Doolp_DoolpException(ConnectionCouldNotWrite,"Could not write to connection");$/;"	kind:prototype	line:12	language:C++	namespace:Doolp	signature:(ConnectionCouldNotWrite,Ó)
+Doolp::__Doolp_DoolpException	../include/doolp/doolp-doolpexceptions.h	/^  class __Doolp_DoolpException(ConnectionCouldNotWrite,"Could not write to connection");$/;"	kind:prototype	line:12	language:C++	namespace:Doolp	signature:(ConnectionCouldNotWrite,Ó)
+__DOOLP_DOOLPNAMING_H	../include/doolp/doolp-doolpnaming.h	2;"	kind:macro	line:2	language:C++
+Doolp	../include/doolp/doolp-doolpnaming.h	/^namespace Doolp$/;"	kind:namespace	line:12	language:C++
+Naming	../include/doolp/doolp-doolpnaming.h	/^  class Naming : public Object$/;"	kind:class	line:14	language:C++	namespace:Doolp	inherits:Object
+Doolp::Naming	../include/doolp/doolp-doolpnaming.h	/^  class Naming : public Object$/;"	kind:class	line:14	language:C++	namespace:Doolp	inherits:Object
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpnaming.h	16;"	kind:macro	line:16	language:C++
+DoolpObject_stdFeatures	../include/doolp/doolp-doolpnaming.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:17	language:C++	class:Doolp::Naming	access:private	signature:( )
+Doolp::Naming::DoolpObject_stdFeatures	../include/doolp/doolp-doolpnaming.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:17	language:C++	class:Doolp::Naming	access:private	signature:( )
+Naming	../include/doolp/doolp-doolpnaming.h	/^    Naming() { }$/;"	kind:function	line:21	language:C++	class:Doolp::Naming	access:public	signature:()
+Doolp::Naming::Naming	../include/doolp/doolp-doolpnaming.h	/^    Naming() { }$/;"	kind:function	line:21	language:C++	class:Doolp::Naming	access:public	signature:()
+getNamedContext	../include/doolp/doolp-doolpnaming.h	/^    doolpfunc<FullContextId*,string&> getNamedContext;$/;"	kind:member	line:24	language:C++	class:Doolp::Naming	access:public
+Doolp::Naming::getNamedContext	../include/doolp/doolp-doolpnaming.h	/^    doolpfunc<FullContextId*,string&> getNamedContext;$/;"	kind:member	line:24	language:C++	class:Doolp::Naming	access:public
+setNamedContext	../include/doolp/doolp-doolpnaming.h	/^    doolpfunc<bool,string&,FullContextId*> setNamedContext;$/;"	kind:member	line:25	language:C++	class:Doolp::Naming	access:public
+Doolp::Naming::setNamedContext	../include/doolp/doolp-doolpnaming.h	/^    doolpfunc<bool,string&,FullContextId*> setNamedContext;$/;"	kind:member	line:25	language:C++	class:Doolp::Naming	access:public
+getNamedObject	../include/doolp/doolp-doolpnaming.h	/^    doolpfunc<ObjectId,string&,string&> getNamedObject;$/;"	kind:member	line:28	language:C++	class:Doolp::Naming	access:public
+Doolp::Naming::getNamedObject	../include/doolp/doolp-doolpnaming.h	/^    doolpfunc<ObjectId,string&,string&> getNamedObject;$/;"	kind:member	line:28	language:C++	class:Doolp::Naming	access:public
+setNamedObject	../include/doolp/doolp-doolpnaming.h	/^    doolpfunc<bool,string&,string&,ObjectId> setNamedObject;$/;"	kind:member	line:29	language:C++	class:Doolp::Naming	access:public
+Doolp::Naming::setNamedObject	../include/doolp/doolp-doolpnaming.h	/^    doolpfunc<bool,string&,string&,ObjectId> setNamedObject;$/;"	kind:member	line:29	language:C++	class:Doolp::Naming	access:public
+setOptions	../include/doolp/doolp-doolpnaming.h	/^    void setOptions () $/;"	kind:function	line:31	language:C++	class:Doolp::Naming	access:public	signature:()
+Doolp::Naming::setOptions	../include/doolp/doolp-doolpnaming.h	/^    void setOptions () $/;"	kind:function	line:31	language:C++	class:Doolp::Naming	access:public	signature:()
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpnaming.h	37;"	kind:macro	line:37	language:C++
+__Doolp_DoolpException	../include/doolp/doolp-doolpnaming.h	/^  class __Doolp_DoolpException(NoNamedContextFound,"Unable to find named context" );$/;"	kind:prototype	line:40	language:C++	namespace:Doolp	signature:(NoNamedContextFound,Ó )
+Doolp::__Doolp_DoolpException	../include/doolp/doolp-doolpnaming.h	/^  class __Doolp_DoolpException(NoNamedContextFound,"Unable to find named context" );$/;"	kind:prototype	line:40	language:C++	namespace:Doolp	signature:(NoNamedContextFound,Ó )
+__DOOLP_DOOLPNAMINGCACHE_H	../include/doolp/doolp-doolpnamingcache.h	2;"	kind:macro	line:2	language:C++
+Doolp	../include/doolp/doolp-doolpnamingcache.h	/^namespace Doolp$/;"	kind:namespace	line:8	language:C++
+NamingCache	../include/doolp/doolp-doolpnamingcache.h	/^  class NamingCache : public Naming, public ForgeService$/;"	kind:class	line:10	language:C++	namespace:Doolp	inherits:Naming,ForgeService
+Doolp::NamingCache	../include/doolp/doolp-doolpnamingcache.h	/^  class NamingCache : public Naming, public ForgeService$/;"	kind:class	line:10	language:C++	namespace:Doolp	inherits:Naming,ForgeService
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpnamingcache.h	12;"	kind:macro	line:12	language:C++
+DoolpObject_stdFeatures	../include/doolp/doolp-doolpnamingcache.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:13	language:C++	class:Doolp::NamingCache	access:private	signature:( )
+Doolp::NamingCache::DoolpObject_stdFeatures	../include/doolp/doolp-doolpnamingcache.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:13	language:C++	class:Doolp::NamingCache	access:private	signature:( )
+DoolpObject_Option	../include/doolp/doolp-doolpnamingcache.h	/^    DoolpObject_Option ( forceObjectAs, Naming );$/;"	kind:prototype	line:14	language:C++	class:Doolp::NamingCache	access:private	signature:( forceObjectAs, Naming )
+Doolp::NamingCache::DoolpObject_Option	../include/doolp/doolp-doolpnamingcache.h	/^    DoolpObject_Option ( forceObjectAs, Naming );$/;"	kind:prototype	line:14	language:C++	class:Doolp::NamingCache	access:private	signature:( forceObjectAs, Naming )
+contexts	../include/doolp/doolp-doolpnamingcache.h	/^    strongmap<string,FullContextId*> contexts;$/;"	kind:member	line:18	language:C++	class:Doolp::NamingCache	access:protected
+Doolp::NamingCache::contexts	../include/doolp/doolp-doolpnamingcache.h	/^    strongmap<string,FullContextId*> contexts;$/;"	kind:member	line:18	language:C++	class:Doolp::NamingCache	access:protected
+objects	../include/doolp/doolp-doolpnamingcache.h	/^    strongdoublemap<string,string,ObjectId> objects;$/;"	kind:member	line:19	language:C++	class:Doolp::NamingCache	access:protected
+Doolp::NamingCache::objects	../include/doolp/doolp-doolpnamingcache.h	/^    strongdoublemap<string,string,ObjectId> objects;$/;"	kind:member	line:19	language:C++	class:Doolp::NamingCache	access:protected
+NamingCache	../include/doolp/doolp-doolpnamingcache.h	/^    NamingCache () $/;"	kind:function	line:22	language:C++	class:Doolp::NamingCache	access:public	signature:()
+Doolp::NamingCache::NamingCache	../include/doolp/doolp-doolpnamingcache.h	/^    NamingCache () $/;"	kind:function	line:22	language:C++	class:Doolp::NamingCache	access:public	signature:()
+start	../include/doolp/doolp-doolpnamingcache.h	/^    virtual bool start () { return true; }$/;"	kind:function	line:27	language:C++	class:Doolp::NamingCache	access:public	implementation:virtual	signature:()
+Doolp::NamingCache::start	../include/doolp/doolp-doolpnamingcache.h	/^    virtual bool start () { return true; }$/;"	kind:function	line:27	language:C++	class:Doolp::NamingCache	access:public	implementation:virtual	signature:()
+stop	../include/doolp/doolp-doolpnamingcache.h	/^    virtual bool stop () { return true; }$/;"	kind:function	line:28	language:C++	class:Doolp::NamingCache	access:public	implementation:virtual	signature:()
+Doolp::NamingCache::stop	../include/doolp/doolp-doolpnamingcache.h	/^    virtual bool stop () { return true; }$/;"	kind:function	line:28	language:C++	class:Doolp::NamingCache	access:public	implementation:virtual	signature:()
+getServiceAsObject	../include/doolp/doolp-doolpnamingcache.h	/^    virtual Object * getServiceAsObject () { return (Object*) this; }$/;"	kind:function	line:29	language:C++	class:Doolp::NamingCache	access:public	implementation:virtual	signature:()
+Doolp::NamingCache::getServiceAsObject	../include/doolp/doolp-doolpnamingcache.h	/^    virtual Object * getServiceAsObject () { return (Object*) this; }$/;"	kind:function	line:29	language:C++	class:Doolp::NamingCache	access:public	implementation:virtual	signature:()
+getNamedContext	../include/doolp/doolp-doolpnamingcache.h	/^    FullContextId * doolpfunclocal(getNamedContext) ( string& name );$/;"	kind:prototype	line:31	language:C++	class:Doolp::NamingCache	access:public	signature:( string& name )
+Doolp::NamingCache::getNamedContext	../include/doolp/doolp-doolpnamingcache.h	/^    FullContextId * doolpfunclocal(getNamedContext) ( string& name );$/;"	kind:prototype	line:31	language:C++	class:Doolp::NamingCache	access:public	signature:( string& name )
+setNamedContext	../include/doolp/doolp-doolpnamingcache.h	/^    bool doolpfunclocal(setNamedContext) ( string& name, FullContextId * id );$/;"	kind:prototype	line:32	language:C++	class:Doolp::NamingCache	access:public	signature:( string& name, FullContextId * id )
+Doolp::NamingCache::setNamedContext	../include/doolp/doolp-doolpnamingcache.h	/^    bool doolpfunclocal(setNamedContext) ( string& name, FullContextId * id );$/;"	kind:prototype	line:32	language:C++	class:Doolp::NamingCache	access:public	signature:( string& name, FullContextId * id )
+getNamedObject	../include/doolp/doolp-doolpnamingcache.h	/^    ObjectId doolpfunclocal(getNamedObject) ( string& contextName, string& name );$/;"	kind:prototype	line:33	language:C++	class:Doolp::NamingCache	access:public	signature:( string& contextName, string& name )
+Doolp::NamingCache::getNamedObject	../include/doolp/doolp-doolpnamingcache.h	/^    ObjectId doolpfunclocal(getNamedObject) ( string& contextName, string& name );$/;"	kind:prototype	line:33	language:C++	class:Doolp::NamingCache	access:public	signature:( string& contextName, string& name )
+setNamedObject	../include/doolp/doolp-doolpnamingcache.h	/^    bool doolpfunclocal(setNamedObject) ( string& contextName, string& name, ObjectId objId );$/;"	kind:prototype	line:34	language:C++	class:Doolp::NamingCache	access:public	signature:( string& contextName, string& name, ObjectId objId )
+Doolp::NamingCache::setNamedObject	../include/doolp/doolp-doolpnamingcache.h	/^    bool doolpfunclocal(setNamedObject) ( string& contextName, string& name, ObjectId objId );$/;"	kind:prototype	line:34	language:C++	class:Doolp::NamingCache	access:public	signature:( string& contextName, string& name, ObjectId objId )
+setOptions	../include/doolp/doolp-doolpnamingcache.h	/^    void setOptions () $/;"	kind:function	line:36	language:C++	class:Doolp::NamingCache	access:public	signature:()
+Doolp::NamingCache::setOptions	../include/doolp/doolp-doolpnamingcache.h	/^    void setOptions () $/;"	kind:function	line:36	language:C++	class:Doolp::NamingCache	access:public	signature:()
+flush	../include/doolp/doolp-doolpnamingcache.h	/^    virtual bool flush() { return true; }$/;"	kind:function	line:42	language:C++	class:Doolp::NamingCache	access:public	implementation:virtual	signature:()
+Doolp::NamingCache::flush	../include/doolp/doolp-doolpnamingcache.h	/^    virtual bool flush() { return true; }$/;"	kind:function	line:42	language:C++	class:Doolp::NamingCache	access:public	implementation:virtual	signature:()
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpnamingcache.h	45;"	kind:macro	line:45	language:C++
+__DOOLP_DOOLPNAMINGFILE_H	../include/doolp/doolp-doolpnamingfile.h	2;"	kind:macro	line:2	language:C++
+Doolp	../include/doolp/doolp-doolpnamingfile.h	/^namespace Doolp$/;"	kind:namespace	line:6	language:C++
+NamingFile	../include/doolp/doolp-doolpnamingfile.h	/^  class NamingFile : public NamingCache$/;"	kind:class	line:8	language:C++	namespace:Doolp	inherits:NamingCache
+Doolp::NamingFile	../include/doolp/doolp-doolpnamingfile.h	/^  class NamingFile : public NamingCache$/;"	kind:class	line:8	language:C++	namespace:Doolp	inherits:NamingCache
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpnamingfile.h	10;"	kind:macro	line:10	language:C++
+DoolpObject_stdFeatures	../include/doolp/doolp-doolpnamingfile.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:11	language:C++	class:Doolp::NamingFile	access:private	signature:( )
+Doolp::NamingFile::DoolpObject_stdFeatures	../include/doolp/doolp-doolpnamingfile.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:11	language:C++	class:Doolp::NamingFile	access:private	signature:( )
+DoolpObject_Option	../include/doolp/doolp-doolpnamingfile.h	/^    DoolpObject_Option ( forceObjectAs, Naming );$/;"	kind:prototype	line:12	language:C++	class:Doolp::NamingFile	access:private	signature:( forceObjectAs, Naming )
+Doolp::NamingFile::DoolpObject_Option	../include/doolp/doolp-doolpnamingfile.h	/^    DoolpObject_Option ( forceObjectAs, Naming );$/;"	kind:prototype	line:12	language:C++	class:Doolp::NamingFile	access:private	signature:( forceObjectAs, Naming )
+fileName	../include/doolp/doolp-doolpnamingfile.h	/^    char * fileName;$/;"	kind:member	line:15	language:C++	class:Doolp::NamingFile	access:protected
+Doolp::NamingFile::fileName	../include/doolp/doolp-doolpnamingfile.h	/^    char * fileName;$/;"	kind:member	line:15	language:C++	class:Doolp::NamingFile	access:protected
+noflush	../include/doolp/doolp-doolpnamingfile.h	/^    bool noflush;$/;"	kind:member	line:16	language:C++	class:Doolp::NamingFile	access:protected
+Doolp::NamingFile::noflush	../include/doolp/doolp-doolpnamingfile.h	/^    bool noflush;$/;"	kind:member	line:16	language:C++	class:Doolp::NamingFile	access:protected
+NamingFile	../include/doolp/doolp-doolpnamingfile.h	/^    NamingFile ( char * fileName );$/;"	kind:prototype	line:18	language:C++	class:Doolp::NamingFile	access:public	signature:( char * fileName )
+Doolp::NamingFile::NamingFile	../include/doolp/doolp-doolpnamingfile.h	/^    NamingFile ( char * fileName );$/;"	kind:prototype	line:18	language:C++	class:Doolp::NamingFile	access:public	signature:( char * fileName )
+getServiceAsObject	../include/doolp/doolp-doolpnamingfile.h	/^    virtual Object * getServiceAsObject();$/;"	kind:prototype	line:19	language:C++	class:Doolp::NamingFile	access:public	implementation:virtual	signature:()
+Doolp::NamingFile::getServiceAsObject	../include/doolp/doolp-doolpnamingfile.h	/^    virtual Object * getServiceAsObject();$/;"	kind:prototype	line:19	language:C++	class:Doolp::NamingFile	access:public	implementation:virtual	signature:()
+start	../include/doolp/doolp-doolpnamingfile.h	/^    bool start () { return true; }$/;"	kind:function	line:21	language:C++	class:Doolp::NamingFile	access:public	signature:()
+Doolp::NamingFile::start	../include/doolp/doolp-doolpnamingfile.h	/^    bool start () { return true; }$/;"	kind:function	line:21	language:C++	class:Doolp::NamingFile	access:public	signature:()
+stop	../include/doolp/doolp-doolpnamingfile.h	/^    bool stop () { return flush(); }$/;"	kind:function	line:22	language:C++	class:Doolp::NamingFile	access:public	signature:()
+Doolp::NamingFile::stop	../include/doolp/doolp-doolpnamingfile.h	/^    bool stop () { return flush(); }$/;"	kind:function	line:22	language:C++	class:Doolp::NamingFile	access:public	signature:()
+readfile	../include/doolp/doolp-doolpnamingfile.h	/^    bool readfile ();$/;"	kind:prototype	line:23	language:C++	class:Doolp::NamingFile	access:public	signature:()
+Doolp::NamingFile::readfile	../include/doolp/doolp-doolpnamingfile.h	/^    bool readfile ();$/;"	kind:prototype	line:23	language:C++	class:Doolp::NamingFile	access:public	signature:()
+flush	../include/doolp/doolp-doolpnamingfile.h	/^    bool flush();$/;"	kind:prototype	line:24	language:C++	class:Doolp::NamingFile	access:public	signature:()
+Doolp::NamingFile::flush	../include/doolp/doolp-doolpnamingfile.h	/^    bool flush();$/;"	kind:prototype	line:24	language:C++	class:Doolp::NamingFile	access:public	signature:()
+DoolpObject_CurrentObject	../include/doolp/doolp-doolpnamingfile.h	25;"	kind:macro	line:25	language:C++
+__DOOLP_DOOLPPERSISTANCE_H	../include/doolp/doolp-doolppersistance.h	2;"	kind:macro	line:2	language:C++
+Doolp	../include/doolp/doolp-doolppersistance.h	/^namespace Doolp$/;"	kind:namespace	line:10	language:C++
+Persistance	../include/doolp/doolp-doolppersistance.h	/^  class Persistance : public Object$/;"	kind:class	line:12	language:C++	namespace:Doolp	inherits:Object
+Doolp::Persistance	../include/doolp/doolp-doolppersistance.h	/^  class Persistance : public Object$/;"	kind:class	line:12	language:C++	namespace:Doolp	inherits:Object
+DoolpObject_CurrentObject	../include/doolp/doolp-doolppersistance.h	14;"	kind:macro	line:14	language:C++
+DoolpObject_stdFeatures	../include/doolp/doolp-doolppersistance.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:15	language:C++	class:Doolp::Persistance	access:private	signature:( )
+Doolp::Persistance::DoolpObject_stdFeatures	../include/doolp/doolp-doolppersistance.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:15	language:C++	class:Doolp::Persistance	access:private	signature:( )
+Persistance	../include/doolp/doolp-doolppersistance.h	/^    Persistance ( ) { __DOOLP_Log ( "NEW DOOLPPERSISTANCE\\n" ); setOptions(); }$/;"	kind:function	line:19	language:C++	class:Doolp::Persistance	access:public	signature:( )
+Doolp::Persistance::Persistance	../include/doolp/doolp-doolppersistance.h	/^    Persistance ( ) { __DOOLP_Log ( "NEW DOOLPPERSISTANCE\\n" ); setOptions(); }$/;"	kind:function	line:19	language:C++	class:Doolp::Persistance	access:public	signature:( )
+getNewContext	../include/doolp/doolp-doolppersistance.h	/^    doolpfunc<FullContextId *, bool> getNewContext;$/;"	kind:member	line:23	language:C++	class:Doolp::Persistance	access:public
+Doolp::Persistance::getNewContext	../include/doolp/doolp-doolppersistance.h	/^    doolpfunc<FullContextId *, bool> getNewContext;$/;"	kind:member	line:23	language:C++	class:Doolp::Persistance	access:public
+commit	../include/doolp/doolp-doolppersistance.h	/^    doolpfunc<bool, FullContextId *, Stream<ObjectId>*,Stream<Object*> *> commit;$/;"	kind:member	line:24	language:C++	class:Doolp::Persistance	access:public
+Doolp::Persistance::commit	../include/doolp/doolp-doolppersistance.h	/^    doolpfunc<bool, FullContextId *, Stream<ObjectId>*,Stream<Object*> *> commit;$/;"	kind:member	line:24	language:C++	class:Doolp::Persistance	access:public
+retrieveObject	../include/doolp/doolp-doolppersistance.h	/^    doolpfunc<Object*,FullContextId*,ObjectId> retrieveObject;$/;"	kind:member	line:25	language:C++	class:Doolp::Persistance	access:public
+Doolp::Persistance::retrieveObject	../include/doolp/doolp-doolppersistance.h	/^    doolpfunc<Object*,FullContextId*,ObjectId> retrieveObject;$/;"	kind:member	line:25	language:C++	class:Doolp::Persistance	access:public
+setOptions	../include/doolp/doolp-doolppersistance.h	/^    void setOptions () $/;"	kind:function	line:27	language:C++	class:Doolp::Persistance	access:public	signature:()
+Doolp::Persistance::setOptions	../include/doolp/doolp-doolppersistance.h	/^    void setOptions () $/;"	kind:function	line:27	language:C++	class:Doolp::Persistance	access:public	signature:()
+DoolpObject_CurrentObject	../include/doolp/doolp-doolppersistance.h	33;"	kind:macro	line:33	language:C++
+__DOOLP_DOOLPPERSISTANCE_FTREE_H	../include/doolp/doolp-doolppersistance-ftree.h	2;"	kind:macro	line:2	language:C++
+Doolp	../include/doolp/doolp-doolppersistance-ftree.h	/^namespace Doolp$/;"	kind:namespace	line:8	language:C++
+PersistanceFTree	../include/doolp/doolp-doolppersistance-ftree.h	/^  class PersistanceFTree : public Persistance, public ForgeService$/;"	kind:class	line:10	language:C++	namespace:Doolp	inherits:Persistance,ForgeService
+Doolp::PersistanceFTree	../include/doolp/doolp-doolppersistance-ftree.h	/^  class PersistanceFTree : public Persistance, public ForgeService$/;"	kind:class	line:10	language:C++	namespace:Doolp	inherits:Persistance,ForgeService
+DoolpObject_CurrentObject	../include/doolp/doolp-doolppersistance-ftree.h	12;"	kind:macro	line:12	language:C++
+DoolpObject_stdFeatures	../include/doolp/doolp-doolppersistance-ftree.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:13	language:C++	class:Doolp::PersistanceFTree	access:private	signature:( )
+Doolp::PersistanceFTree::DoolpObject_stdFeatures	../include/doolp/doolp-doolppersistance-ftree.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:13	language:C++	class:Doolp::PersistanceFTree	access:private	signature:( )
+DoolpObject_Option	../include/doolp/doolp-doolppersistance-ftree.h	/^    DoolpObject_Option ( forceObjectAs, Persistance );$/;"	kind:prototype	line:14	language:C++	class:Doolp::PersistanceFTree	access:private	signature:( forceObjectAs, Persistance )
+Doolp::PersistanceFTree::DoolpObject_Option	../include/doolp/doolp-doolppersistance-ftree.h	/^    DoolpObject_Option ( forceObjectAs, Persistance );$/;"	kind:prototype	line:14	language:C++	class:Doolp::PersistanceFTree	access:private	signature:( forceObjectAs, Persistance )
+ftreeRoot	../include/doolp/doolp-doolppersistance-ftree.h	/^    char * ftreeRoot;$/;"	kind:member	line:15	language:C++	class:Doolp::PersistanceFTree	access:private
+Doolp::PersistanceFTree::ftreeRoot	../include/doolp/doolp-doolppersistance-ftree.h	/^    char * ftreeRoot;$/;"	kind:member	line:15	language:C++	class:Doolp::PersistanceFTree	access:private
+PersistanceFTree	../include/doolp/doolp-doolppersistance-ftree.h	/^    PersistanceFTree ( char * _ftreeRoot );$/;"	kind:prototype	line:17	language:C++	class:Doolp::PersistanceFTree	access:public	signature:( char * _ftreeRoot )
+Doolp::PersistanceFTree::PersistanceFTree	../include/doolp/doolp-doolppersistance-ftree.h	/^    PersistanceFTree ( char * _ftreeRoot );$/;"	kind:prototype	line:17	language:C++	class:Doolp::PersistanceFTree	access:public	signature:( char * _ftreeRoot )
+start	../include/doolp/doolp-doolppersistance-ftree.h	/^    bool start () { return true; }$/;"	kind:function	line:18	language:C++	class:Doolp::PersistanceFTree	access:public	signature:()
+Doolp::PersistanceFTree::start	../include/doolp/doolp-doolppersistance-ftree.h	/^    bool start () { return true; }$/;"	kind:function	line:18	language:C++	class:Doolp::PersistanceFTree	access:public	signature:()
+stop	../include/doolp/doolp-doolppersistance-ftree.h	/^    bool stop () { return true; }$/;"	kind:function	line:19	language:C++	class:Doolp::PersistanceFTree	access:public	signature:()
+Doolp::PersistanceFTree::stop	../include/doolp/doolp-doolppersistance-ftree.h	/^    bool stop () { return true; }$/;"	kind:function	line:19	language:C++	class:Doolp::PersistanceFTree	access:public	signature:()
+getServiceAsObject	../include/doolp/doolp-doolppersistance-ftree.h	/^    Object * getServiceAsObject () { return (Object*) this; }$/;"	kind:function	line:20	language:C++	class:Doolp::PersistanceFTree	access:public	signature:()
+Doolp::PersistanceFTree::getServiceAsObject	../include/doolp/doolp-doolppersistance-ftree.h	/^    Object * getServiceAsObject () { return (Object*) this; }$/;"	kind:function	line:20	language:C++	class:Doolp::PersistanceFTree	access:public	signature:()
+getNewContext	../include/doolp/doolp-doolppersistance-ftree.h	/^    FullContextId * doolpfunclocal(getNewContext) (bool force);$/;"	kind:prototype	line:22	language:C++	class:Doolp::PersistanceFTree	access:public	signature:(bool force)
+Doolp::PersistanceFTree::getNewContext	../include/doolp/doolp-doolppersistance-ftree.h	/^    FullContextId * doolpfunclocal(getNewContext) (bool force);$/;"	kind:prototype	line:22	language:C++	class:Doolp::PersistanceFTree	access:public	signature:(bool force)
+commit	../include/doolp/doolp-doolppersistance-ftree.h	/^    bool doolpfunclocal(commit) ( FullContextId * fullContextId, $/;"	kind:prototype	line:24	language:C++	class:Doolp::PersistanceFTree	access:public	signature:( FullContextId * fullContextId, Stream<ObjectId> * deletedObjects, Stream<Object*> * objects )
+Doolp::PersistanceFTree::commit	../include/doolp/doolp-doolppersistance-ftree.h	/^    bool doolpfunclocal(commit) ( FullContextId * fullContextId, $/;"	kind:prototype	line:24	language:C++	class:Doolp::PersistanceFTree	access:public	signature:( FullContextId * fullContextId, Stream<ObjectId> * deletedObjects, Stream<Object*> * objects )
+retrieveObject	../include/doolp/doolp-doolppersistance-ftree.h	/^    Object * doolpfunclocal(retrieveObject) ( FullContextId * fullContextId, ObjectId objId );$/;"	kind:prototype	line:28	language:C++	class:Doolp::PersistanceFTree	access:public	signature:( FullContextId * fullContextId, ObjectId objId )
+Doolp::PersistanceFTree::retrieveObject	../include/doolp/doolp-doolppersistance-ftree.h	/^    Object * doolpfunclocal(retrieveObject) ( FullContextId * fullContextId, ObjectId objId );$/;"	kind:prototype	line:28	language:C++	class:Doolp::PersistanceFTree	access:public	signature:( FullContextId * fullContextId, ObjectId objId )
+writeObject	../include/doolp/doolp-doolppersistance-ftree.h	/^    bool writeObject ( FullContextId * fullContextId, ObjectBuffer * objBuff );$/;"	kind:prototype	line:31	language:C++	class:Doolp::PersistanceFTree	access:protected	signature:( FullContextId * fullContextId, ObjectBuffer * objBuff )
+Doolp::PersistanceFTree::writeObject	../include/doolp/doolp-doolppersistance-ftree.h	/^    bool writeObject ( FullContextId * fullContextId, ObjectBuffer * objBuff );$/;"	kind:prototype	line:31	language:C++	class:Doolp::PersistanceFTree	access:protected	signature:( FullContextId * fullContextId, ObjectBuffer * objBuff )
+DoolpObject_CurrentObject	../include/doolp/doolp-doolppersistance-ftree.h	32;"	kind:macro	line:32	language:C++
+__DOOLP_DOOLPPUBSUB_GENERIC_H	../include/doolp/doolp-doolppubsub-generic.h	2;"	kind:macro	line:2	language:C++
+Doolp	../include/doolp/doolp-doolppubsub-generic.h	/^namespace Doolp$/;"	kind:namespace	line:9	language:C++
+PubSubGeneric	../include/doolp/doolp-doolppubsub-generic.h	/^  class PubSubGeneric : public Object$/;"	kind:class	line:16	language:C++	namespace:Doolp	inherits:Object
+Doolp::PubSubGeneric	../include/doolp/doolp-doolppubsub-generic.h	/^  class PubSubGeneric : public Object$/;"	kind:class	line:16	language:C++	namespace:Doolp	inherits:Object
+DoolpObject_CurrentObject	../include/doolp/doolp-doolppubsub-generic.h	18;"	kind:macro	line:18	language:C++
+DoolpObject_stdFeatures	../include/doolp/doolp-doolppubsub-generic.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:19	language:C++	class:Doolp::PubSubGeneric	access:private	signature:( )
+Doolp::PubSubGeneric::DoolpObject_stdFeatures	../include/doolp/doolp-doolppubsub-generic.h	/^    DoolpObject_stdFeatures ( );$/;"	kind:prototype	line:19	language:C++	class:Doolp::PubSubGeneric	access:private	signature:( )
+PubSubGeneric	../include/doolp/doolp-doolppubsub-generic.h	/^    PubSubGeneric() {}$/;"	kind:function	line:21	language:C++	class:Doolp::PubSubGeneric	access:protected	signature:()
+Doolp::PubSubGeneric::PubSubGeneric	../include/doolp/doolp-doolppubsub-generic.h	/^    PubSubGeneric() {}$/;"	kind:function	line:21	language:C++	class:Doolp::PubSubGeneric	access:protected	signature:()
+subscribe	../include/doolp/doolp-doolppubsub-generic.h	/^    doolpfunc<bool,Stream<Object*>*,string&,string&> subscribe;$/;"	kind:member	line:23	language:C++	class:Doolp::PubSubGeneric	access:public
+Doolp::PubSubGeneric::subscribe	../include/doolp/doolp-doolppubsub-generic.h	/^    doolpfunc<bool,Stream<Object*>*,string&,string&> subscribe;$/;"	kind:member	line:23	language:C++	class:Doolp::PubSubGeneric	access:public
+setOptions	../include/doolp/doolp-doolppubsub-generic.h	/^    void setOptions () $/;"	kind:function	line:25	language:C++	class:Doolp::PubSubGeneric	access:public	signature:()
+Doolp::PubSubGeneric::setOptions	../include/doolp/doolp-doolppubsub-generic.h	/^    void setOptions () $/;"	kind:function	line:25	language:C++	class:Doolp::PubSubGeneric	access:public	signature:()
+DoolpObject_CurrentObject	../include/doolp/doolp-doolppubsub-generic.h	31;"	kind:macro	line:31	language:C++
+__Doolp_DoolpException	../include/doolp/doolp-doolppubsub-generic.h	/^  class __Doolp_DoolpException(PubSubCouldNotSubscribe,"Could not perform subscribe (invalid subscription ?)");$/;"	kind:prototype	line:33	language:C++	namespace:Doolp	signature:(PubSubCouldNotSubscribe,Ó)
+Doolp::__Doolp_DoolpException	../include/doolp/doolp-doolppubsub-generic.h	/^  class __Doolp_DoolpException(PubSubCouldNotSubscribe,"Could not perform subscribe (invalid subscription ?)");$/;"	kind:prototype	line:33	language:C++	namespace:Doolp	signature:(PubSubCouldNotSubscribe,Ó)
+Doolp	../include/doolp/doolp-doolppubsub-broker.h	/^namespace Doolp$/;"	kind:namespace	line:4	language:C++
+PubSubBroker	../include/doolp/doolp-doolppubsub-broker.h	/^  class PubSubBroker : public PubSubGeneric$/;"	kind:class	line:9	language:C++	namespace:Doolp	inherits:PubSubGeneric
+Doolp::PubSubBroker	../include/doolp/doolp-doolppubsub-broker.h	/^  class PubSubBroker : public PubSubGeneric$/;"	kind:class	line:9	language:C++	namespace:Doolp	inherits:PubSubGeneric
+DoolpObject_CurrentObject	../include/doolp/doolp-doolppubsub-broker.h	11;"	kind:macro	line:11	language:C++
+DoolpObject_stdFeatures	../include/doolp/doolp-doolppubsub-broker.h	/^    DoolpObject_stdFeatures ();$/;"	kind:prototype	line:12	language:C++	class:Doolp::PubSubBroker	access:private	signature:()
+Doolp::PubSubBroker::DoolpObject_stdFeatures	../include/doolp/doolp-doolppubsub-broker.h	/^    DoolpObject_stdFeatures ();$/;"	kind:prototype	line:12	language:C++	class:Doolp::PubSubBroker	access:private	signature:()
+DoolpObject_Option	../include/doolp/doolp-doolppubsub-broker.h	/^    DoolpObject_Option ( forceObjectAs, PubSubGeneric );$/;"	kind:prototype	line:13	language:C++	class:Doolp::PubSubBroker	access:private	signature:( forceObjectAs, PubSubGeneric )
+Doolp::PubSubBroker::DoolpObject_Option	../include/doolp/doolp-doolppubsub-broker.h	/^    DoolpObject_Option ( forceObjectAs, PubSubGeneric );$/;"	kind:prototype	line:13	language:C++	class:Doolp::PubSubBroker	access:private	signature:( forceObjectAs, PubSubGeneric )
+_lock	../include/doolp/doolp-doolppubsub-broker.h	/^    pthread_mutex_t _lock;$/;"	kind:member	line:14	language:C++	class:Doolp::PubSubBroker	access:private
+Doolp::PubSubBroker::_lock	../include/doolp/doolp-doolppubsub-broker.h	/^    pthread_mutex_t _lock;$/;"	kind:member	line:14	language:C++	class:Doolp::PubSubBroker	access:private
+lock	../include/doolp/doolp-doolppubsub-broker.h	/^    void lock () { pthread_mutex_lock ( &_lock ); }$/;"	kind:function	line:16	language:C++	class:Doolp::PubSubBroker	access:private	signature:()
+Doolp::PubSubBroker::lock	../include/doolp/doolp-doolppubsub-broker.h	/^    void lock () { pthread_mutex_lock ( &_lock ); }$/;"	kind:function	line:16	language:C++	class:Doolp::PubSubBroker	access:private	signature:()
+unlock	../include/doolp/doolp-doolppubsub-broker.h	/^    void unlock () { pthread_mutex_unlock ( &_lock ); }$/;"	kind:function	line:17	language:C++	class:Doolp::PubSubBroker	access:private	signature:()
+Doolp::PubSubBroker::unlock	../include/doolp/doolp-doolppubsub-broker.h	/^    void unlock () { pthread_mutex_unlock ( &_lock ); }$/;"	kind:function	line:17	language:C++	class:Doolp::PubSubBroker	access:private	signature:()
+Subscription	../include/doolp/doolp-doolppubsub-broker.h	/^    class Subscription$/;"	kind:class	line:19	language:C++	class:Doolp::PubSubBroker	access:private
+Doolp::PubSubBroker::Subscription	../include/doolp/doolp-doolppubsub-broker.h	/^    class Subscription$/;"	kind:class	line:19	language:C++	class:Doolp::PubSubBroker	access:private
+subscription	../include/doolp/doolp-doolppubsub-broker.h	/^      string subscription;$/;"	kind:member	line:22	language:C++	class:Doolp::PubSubBroker::Subscription	access:public
+Doolp::PubSubBroker::Subscription::subscription	../include/doolp/doolp-doolppubsub-broker.h	/^      string subscription;$/;"	kind:member	line:22	language:C++	class:Doolp::PubSubBroker::Subscription	access:public
+options	../include/doolp/doolp-doolppubsub-broker.h	/^      string options;$/;"	kind:member	line:23	language:C++	class:Doolp::PubSubBroker::Subscription	access:public
+Doolp::PubSubBroker::Subscription::options	../include/doolp/doolp-doolppubsub-broker.h	/^      string options;$/;"	kind:member	line:23	language:C++	class:Doolp::PubSubBroker::Subscription	access:public
+filter	../include/doolp/doolp-doolppubsub-broker.h	/^      PubSubFilter * filter;$/;"	kind:member	line:24	language:C++	class:Doolp::PubSubBroker::Subscription	access:public
+Doolp::PubSubBroker::Subscription::filter	../include/doolp/doolp-doolppubsub-broker.h	/^      PubSubFilter * filter;$/;"	kind:member	line:24	language:C++	class:Doolp::PubSubBroker::Subscription	access:public
+Subscription	../include/doolp/doolp-doolppubsub-broker.h	/^      Subscription ( string & _subscription, string& _options )$/;"	kind:function	line:25	language:C++	class:Doolp::PubSubBroker::Subscription	access:public	signature:( string & _subscription, string& _options )
+Doolp::PubSubBroker::Subscription::Subscription	../include/doolp/doolp-doolppubsub-broker.h	/^      Subscription ( string & _subscription, string& _options )$/;"	kind:function	line:25	language:C++	class:Doolp::PubSubBroker::Subscription	access:public	signature:( string & _subscription, string& _options )
+isValid	../include/doolp/doolp-doolppubsub-broker.h	/^      bool isValid ( Object * obj );$/;"	kind:prototype	line:30	language:C++	class:Doolp::PubSubBroker::Subscription	access:public	signature:( Object * obj )
+Doolp::PubSubBroker::Subscription::isValid	../include/doolp/doolp-doolppubsub-broker.h	/^      bool isValid ( Object * obj );$/;"	kind:prototype	line:30	language:C++	class:Doolp::PubSubBroker::Subscription	access:public	signature:( Object * obj )
+subscriptions	../include/doolp/doolp-doolppubsub-broker.h	/^    strongmap<Stream<Object*>*,Subscription*> subscriptions;$/;"	kind:member	line:32	language:C++	class:Doolp::PubSubBroker	access:private
+Doolp::PubSubBroker::subscriptions	../include/doolp/doolp-doolppubsub-broker.h	/^    strongmap<Stream<Object*>*,Subscription*> subscriptions;$/;"	kind:member	line:32	language:C++	class:Doolp::PubSubBroker	access:private
+addSubscription	../include/doolp/doolp-doolppubsub-broker.h	/^    bool addSubscription ( Stream<Object*>* stream, string & subscription, string& options );$/;"	kind:prototype	line:34	language:C++	class:Doolp::PubSubBroker	access:private	signature:( Stream<Object*>* stream, string & subscription, string& options )
+Doolp::PubSubBroker::addSubscription	../include/doolp/doolp-doolppubsub-broker.h	/^    bool addSubscription ( Stream<Object*>* stream, string & subscription, string& options );$/;"	kind:prototype	line:34	language:C++	class:Doolp::PubSubBroker	access:private	signature:( Stream<Object*>* stream, string & subscription, string& options )
+removeSubscription	../include/doolp/doolp-doolppubsub-broker.h	/^    bool removeSubscription ( Stream<Object*>* stream);$/;"	kind:prototype	line:35	language:C++	class:Doolp::PubSubBroker	access:private	signature:( Stream<Object*>* stream)
+Doolp::PubSubBroker::removeSubscription	../include/doolp/doolp-doolppubsub-broker.h	/^    bool removeSubscription ( Stream<Object*>* stream);$/;"	kind:prototype	line:35	language:C++	class:Doolp::PubSubBroker	access:private	signature:( Stream<Object*>* stream)
+distribute	../include/doolp/doolp-doolppubsub-broker.h	/^    bool distribute ( Object * obj );$/;"	kind:prototype	line:37	language:C++	class:Doolp::PubSubBroker	access:private	signature:( Object * obj )
+Doolp::PubSubBroker::distribute	../include/doolp/doolp-doolppubsub-broker.h	/^    bool distribute ( Object * obj );$/;"	kind:prototype	line:37	language:C++	class:Doolp::PubSubBroker	access:private	signature:( Object * obj )
+PubSubBroker	../include/doolp/doolp-doolppubsub-broker.h	/^    PubSubBroker();$/;"	kind:prototype	line:40	language:C++	class:Doolp::PubSubBroker	access:public	signature:()
+Doolp::PubSubBroker::PubSubBroker	../include/doolp/doolp-doolppubsub-broker.h	/^    PubSubBroker();$/;"	kind:prototype	line:40	language:C++	class:Doolp::PubSubBroker	access:public	signature:()
+subscribe	../include/doolp/doolp-doolppubsub-broker.h	/^    bool doolpfunclocal(subscribe) (Stream<Object*>*,string&,string&);$/;"	kind:prototype	line:42	language:C++	class:Doolp::PubSubBroker	access:public	signature:(Stream<Object*>*,string&,string&)
+Doolp::PubSubBroker::subscribe	../include/doolp/doolp-doolppubsub-broker.h	/^    bool doolpfunclocal(subscribe) (Stream<Object*>*,string&,string&);$/;"	kind:prototype	line:42	language:C++	class:Doolp::PubSubBroker	access:public	signature:(Stream<Object*>*,string&,string&)
+setOptions	../include/doolp/doolp-doolppubsub-broker.h	/^    void setOptions () $/;"	kind:function	line:44	language:C++	class:Doolp::PubSubBroker	access:public	signature:()
+Doolp::PubSubBroker::setOptions	../include/doolp/doolp-doolppubsub-broker.h	/^    void setOptions () $/;"	kind:function	line:44	language:C++	class:Doolp::PubSubBroker	access:public	signature:()
